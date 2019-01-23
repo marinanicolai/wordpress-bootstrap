@@ -1,22 +1,24 @@
-section.first {
-	height: 500px;
-	background-color: #484848;
-	clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+section {
+	&.first {
+		height: 500px;
+		background-color: #484848;
+		clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
 
-	h1.name,
-	p.lead,
-	a {
-		color: white;
+		h1.name,
+		p.lead,
+		a {
+			color: white;
+		}
 	}
-}
 
-section.second {
-	background-color: white;
-	p.buttons {
-		display: flex;
-		justify-content: center;
-		a.btn {
-			margin: 1em;
+	&.second {
+		background-color: white;
+		p.buttons {
+			display: flex;
+			justify-content: center;
+			a.btn {
+				margin: 1em;
+			}
 		}
 	}
 }
