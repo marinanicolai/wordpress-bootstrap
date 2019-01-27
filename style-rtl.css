@@ -667,28 +667,6 @@ body.page .main-navigation {
   margin-left: calc( .25 * 1rem);
 }
 
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu {
-  display: block;
-  right: 0;
-  margin-top: 0;
-  opacity: 1;
-  width: auto;
-  min-width: 100%;
-  /* Non-mobile position */
-  /* Nested sub-menu dashes */
-}
-
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu {
-  display: block;
-  right: 0;
-  margin-top: 0;
-  opacity: 1;
-  width: auto;
-  min-width: 100%;
-  /* Non-mobile position */
-  /* Nested sub-menu dashes */
-}
-
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu {
   display: block;
   right: 0;
@@ -701,36 +679,6 @@ body.page .main-navigation {
 }
 
 @media only screen and (min-width: 768px) {
-  .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu {
-    display: block;
-    margin-top: 0;
-    opacity: 1;
-    position: absolute;
-    right: 0;
-    left: auto;
-    top: auto;
-    bottom: auto;
-    height: auto;
-    min-width: -moz-max-content;
-    min-width: -webkit-max-content;
-    min-width: max-content;
-    transform: none;
-  }
-  .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu {
-    display: block;
-    margin-top: 0;
-    opacity: 1;
-    position: absolute;
-    right: 0;
-    left: auto;
-    top: auto;
-    bottom: auto;
-    height: auto;
-    min-width: -moz-max-content;
-    min-width: -webkit-max-content;
-    min-width: max-content;
-    transform: none;
-  }
   .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu {
     display: block;
     margin-top: 0;
@@ -748,20 +696,6 @@ body.page .main-navigation {
   }
 }
 
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu.hidden-links {
-  right: 0;
-  width: 100%;
-  display: table;
-  position: absolute;
-}
-
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu.hidden-links {
-  right: 0;
-  width: 100%;
-  display: table;
-  position: absolute;
-}
-
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu.hidden-links {
   right: 0;
   width: 100%;
@@ -770,18 +704,6 @@ body.page .main-navigation {
 }
 
 @media only screen and (min-width: 768px) {
-  .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu.hidden-links {
-    left: 0;
-    right: auto;
-    display: block;
-    width: max-content;
-  }
-  .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu.hidden-links {
-    left: 0;
-    right: auto;
-    display: block;
-    width: max-content;
-  }
   .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu.hidden-links {
     left: 0;
     right: auto;
@@ -790,36 +712,8 @@ body.page .main-navigation {
   }
 }
 
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .submenu-expand {
-  display: none;
-}
-
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .submenu-expand {
-  display: none;
-}
-
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu .submenu-expand {
   display: none;
-}
-
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu {
-  display: block;
-  margin-top: inherit;
-  position: relative;
-  width: 100%;
-  right: 0;
-  opacity: 1;
-  /* Non-mobile position */
-}
-
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu {
-  display: block;
-  margin-top: inherit;
-  position: relative;
-  width: 100%;
-  right: 0;
-  opacity: 1;
-  /* Non-mobile position */
 }
 
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu .sub-menu {
@@ -833,44 +727,14 @@ body.page .main-navigation {
 }
 
 @media only screen and (min-width: 768px) {
-  .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu {
-    float: none;
-    max-width: 100%;
-  }
-  .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu {
-    float: none;
-    max-width: 100%;
-  }
   .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu .sub-menu {
     float: none;
     max-width: 100%;
   }
 }
 
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu {
-  counter-reset: submenu;
-}
-
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu {
-  counter-reset: submenu;
-}
-
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu .sub-menu {
   counter-reset: submenu;
-}
-
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu > li > a::before {
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
-  font-weight: normal;
-  content: "– " counters(submenu, "– ", none);
-  counter-increment: submenu;
-}
-
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu > li > a::before {
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
-  font-weight: normal;
-  content: "– " counters(submenu, "– ", none);
-  counter-increment: submenu;
 }
 
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu .sub-menu > li > a::before {
@@ -2696,18 +2560,7 @@ body.page .main-navigation {
 
 section.first {
   height: 500px;
-  background-color: #484848;
   clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
-}
-
-section.first h1.name,
-section.first p.lead,
-section.first a {
-  color: white;
-}
-
-section.second {
-  background-color: white;
 }
 
 section.second p.buttons {
@@ -2720,7 +2573,7 @@ section.second p.buttons a.btn {
 }
 
 section.third {
-  background-color: #faf9f9;
+  background-color: #c8c8c8;
   height: 29em;
   transform: skewY(4deg);
 }
@@ -2740,10 +2593,6 @@ section.third .picture {
   width: 50%;
 }
 
-section.fourth {
-  background-color: #ffffff;
-}
-
 section.fourth .timeline {
   width: 100%;
   height: 100px;
@@ -2755,7 +2604,7 @@ section.fourth .timeline {
 
 section.fourth .timeline .events {
   position: relative;
-  background-color: #606060;
+  background-color: #959595;
   height: 3px;
   width: 100%;
   border-radius: 4px;
@@ -2783,7 +2632,7 @@ section.fourth .timeline .events ul li a {
   font-family: "Arapey", sans-serif;
   font-style: italic;
   font-size: 1.25em;
-  color: #606060;
+  color: #959595;
   text-decoration: none;
   position: relative;
   top: -32px;
@@ -2798,24 +2647,24 @@ section.fourth .timeline .events ul li a :after {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  border: 3px solid #606060;
-  background-color: #fff;
+  border: 3px solid #959595;
+  background-color: #c8c8c8;
   transition: 0.3s ease;
   transform: translateX(50%);
 }
 
 section.fourth .timeline .events ul li a hover::after {
-  background-color: #194693;
-  border-color: #194693;
+  background-color: #1ba1e2;
+  border-color: #1ba1e2;
 }
 
 section.fourth .timeline .events ul li a selected:after {
-  background-color: #194693;
-  border-color: #194693;
+  background-color: #1ba1e2;
+  border-color: #1ba1e2;
 }
 
 section.fifth {
-  background-color: #faf9f9;
+  background-color: #c8c8c8;
   transform: skewY(4deg);
   height: 29em;
 }
@@ -2876,7 +2725,7 @@ section.sixth li.large {
 }
 
 section.seventh {
-  background-color: #faf9f9;
+  background-color: #c8c8c8;
   transform: skewY(4deg);
 }
 
@@ -2910,9 +2759,9 @@ section.eighth img.profile {
 }
 
 section.nineth {
-  background-color: #343434;
+  background-color: black;
   clip-path: polygon(0 30%, 100% 0%, 100% 100%, 0% 100%);
-  color: white;
+  color: #c8c8c8;
 }
 
 section.nineth ul.col {
@@ -2965,6 +2814,12 @@ section.nineth ul.col ul.lates_twe li {
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
+  --main: #ffffff;
+  --second: #484848;
+  --second-light: #959595;
+  --second-lighter: #c8c8c8;
+  --second-dark: black;
+  --button: #1ba1e2;
   --primary: #007bff;
   --secondary: #6c757d;
   --success: #28a745;

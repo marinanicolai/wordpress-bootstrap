@@ -1,18 +1,30 @@
+$colors: (
+	main: #ffffff,
+	second: #484848,
+	/*this color is #60606 */ second-light: lighten(#484848, 30%),
+	/*this color is #faf9f9 */ second-lighter: lighten(#484848, 50%),
+	/*this color is #343434*/ second-dark: darken(#484848, 30%),
+	button: #1ba1e2
+);
+@function color($color-name) {
+	@return map-get($colors, $color-name);
+}
+
 section {
 	&.first {
 		height: 500px;
-		background-color: #484848;
+		background-color: color(second_color);
 		clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
 
 		h1.name,
 		p.lead,
 		a {
-			color: white;
+			color: color(main_color);
 		}
 	}
 
 	&.second {
-		background-color: white;
+		background-color: color(main_color);
 		p.buttons {
 			display: flex;
 			justify-content: center;
@@ -24,7 +36,7 @@ section {
 }
 
 section.third {
-	background-color: #faf9f9;
+	background-color: color(second-lighter);
 	height: 29em;
 	transform: skewY(-4deg);
 	h1,
@@ -42,7 +54,7 @@ section.third {
 }
 
 section.fourth {
-	background-color: #ffffff;
+	background-color: color(main_color);
 
 	.timeline {
 		width: 100%;
@@ -54,7 +66,7 @@ section.fourth {
 
 		.events {
 			position: relative;
-			background-color: #606060;
+			background-color: color(second-light);
 			height: 3px;
 			width: 100%;
 			border-radius: 4px;
@@ -76,7 +88,7 @@ section.fourth {
 						font-family: "Arapey", sans-serif;
 						font-style: italic;
 						font-size: 1.25em;
-						color: #606060;
+						color: color(second-light);
 						text-decoration: none;
 						position: relative;
 						top: -32px;
@@ -89,19 +101,19 @@ section.fourth {
 							height: 20px;
 							width: 20px;
 							border-radius: 50%;
-							border: 3px solid #606060;
-							background-color: #fff;
+							border: 3px solid color(second-light);
+							background-color: color(second-lighter);
 							transition: 0.3s ease;
 							transform: translateX(-50%);
 						}
 
 						hover::after {
-							background-color: #194693;
-							border-color: #194693;
+							background-color: color(button);
+							border-color: color(button);
 						}
 						selected:after {
-							background-color: #194693;
-							border-color: #194693;
+							background-color: color(button);
+							border-color: color(button);
 						}
 					}
 				}
@@ -111,7 +123,7 @@ section.fourth {
 }
 
 section.fifth {
-	background-color: #faf9f9;
+	background-color: color(second-lighter);
 	transform: skewY(-4deg);
 	height: 29em;
 	div,
@@ -130,7 +142,7 @@ section.fifth {
 }
 
 section.sixth {
-	background-color: #ffffff;
+	background-color: color(main);
 	.row {
 		display: flex;
 		justify-content: center;
@@ -146,7 +158,7 @@ section.sixth {
 	}
 	li {
 		width: 356px;
-		background-color: #484848;
+		background-color: color(second);
 		margin-bottom: 15px;
 	}
 	li.small {
@@ -161,7 +173,7 @@ section.sixth {
 }
 
 section.seventh {
-	background-color: #faf9f9;
+	background-color: color(second-lighter);
 	transform: skewY(-4deg);
 	p {
 		transform: skewY(4deg);
@@ -175,7 +187,7 @@ section.seventh {
 }
 
 section.eighth {
-	background-color: #ffffff;
+	background-color: color(main);
 	ul {
 		list-style-type: none;
 		display: flex;
@@ -186,14 +198,14 @@ section.eighth {
 	img.profile {
 		width: 272px;
 		height: 272px;
-		background-color: #484848;
+		background-color: color(second);
 	}
 }
 
 section.nineth {
-	background-color: #343434;
+	background-color: color(second-dark);
 	clip-path: polygon(0 30%, 100% 0%, 100% 100%, 0% 100%);
-	color: white;
+	color: color(second-lighter);
 	ul.col {
 		padding-top: 4em;
 		list-style-type: none;
