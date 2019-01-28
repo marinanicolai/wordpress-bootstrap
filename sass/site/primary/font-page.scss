@@ -11,20 +11,20 @@ $colors: (
 }
 
 section {
-	&.first {
+	&.corp_design {
 		height: 500px;
-		background-color: color(second_color);
+		background-color: color(second);
 		clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
 
 		h1.name,
 		p.lead,
 		a {
-			color: color(main_color);
+			color: color(main);
 		}
 	}
 
-	&.second {
-		background-color: color(main_color);
+	&.clean_unique_design {
+		background-color: color(main);
 		p.buttons {
 			display: flex;
 			justify-content: center;
@@ -35,7 +35,7 @@ section {
 	}
 }
 
-section.third {
+section.know_about_us {
 	background-color: color(second-lighter);
 	height: 29em;
 	transform: skewY(-4deg);
@@ -53,8 +53,8 @@ section.third {
 	}
 }
 
-section.fourth {
-	background-color: color(main_color);
+section.working_process {
+	background-color: color(main);
 
 	.timeline {
 		width: 100%;
@@ -122,7 +122,7 @@ section.fourth {
 	}
 }
 
-section.fifth {
+section.testimonials {
 	background-color: color(second-lighter);
 	transform: skewY(-4deg);
 	height: 29em;
@@ -141,7 +141,7 @@ section.fifth {
 	}
 }
 
-section.sixth {
+section.our_portofolio {
 	background-color: color(main);
 	.row {
 		display: flex;
@@ -172,7 +172,7 @@ section.sixth {
 	}
 }
 
-section.seventh {
+section.purchase {
 	background-color: color(second-lighter);
 	transform: skewY(-4deg);
 	p {
@@ -186,7 +186,7 @@ section.seventh {
 	}
 }
 
-section.eighth {
+section.our_team {
 	background-color: color(main);
 	ul {
 		list-style-type: none;
@@ -202,7 +202,7 @@ section.eighth {
 	}
 }
 
-section.nineth {
+section.contact {
 	background-color: color(second-dark);
 	clip-path: polygon(0 30%, 100% 0%, 100% 100%, 0% 100%);
 	color: color(second-lighter);

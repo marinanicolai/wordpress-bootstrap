@@ -19,7 +19,7 @@ get_header();
 
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main">
-		<section class="first jumbotron text-center">
+		<section class="corp_design jumbotron text-center">
 			<div class="container">
 				<h1 class="name jumbotron-heading">corporate design</h1>
 				<p class="lead text-muted">lorem inpsum lorem ipsum</p>
@@ -29,7 +29,7 @@ get_header();
 			</div>
 		</section>
 
-		<section class="second jumbotron text-center">
+		<section class="clean_unique_design jumbotron text-center">
 			<div class="container">
 				<h1 class="name jumbotron-heading">ForCorporate Clean and Unique Design</h1>
 					<p class="buttons">
@@ -39,7 +39,7 @@ get_header();
 </div>
 </section>
 
-		<section class="third jumbotron text-center">
+		<section class="know_about_us jumbotron text-center">
 			<div class="container">
 				<h1 class="name jumbotron-heading">Know About Us</h1>
 				<div class="text">
@@ -62,7 +62,7 @@ get_header();
 			</div>
 		</section>
 
-<section class="fourth jumbotron text-center">
+<section class="working_process jumbotron text-center">
 			<div class="container">
 				<h1 class="name jumbotron-heading">Working Process</h1>
 					<p>
@@ -122,7 +122,7 @@ third It is a long established fact that a reader will be distracted by the
 
 </section>
 
-<section class="fifth jumbotron text-center">
+<section class="testimonials jumbotron text-center">
 			<div class="container">
 				<h1 class="name jumbotron-heading">Working Process</h1>
 					<p>
@@ -158,7 +158,7 @@ third It is a long established fact that a reader will be distracted by the
 
 </section>
 
-<section class="sixth jumbotron text-center">
+<section class="our_portofolio jumbotron text-center">
 			<div class="container">
 				<h1 class="name jumbotron-heading">Working Process</h1>
 					<p>
@@ -189,7 +189,7 @@ third It is a long established fact that a reader will be distracted by the
 	 </div>
 </div>	 
 </section>
-<section class="seventh jumbotron text-center">
+<section class="purchase jumbotron text-center">
 			<div class="container">				
 				<p class="left">
 						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet. 							
@@ -200,7 +200,7 @@ third It is a long established fact that a reader will be distracted by the
 </div>
 </section>
 
-<section class="eighth jumbotron text-center">
+<section class="our_team jumbotron text-center">
 			<div class="container">
 				<h1 class="name jumbotron-heading">Working Process</h1>
 					<p>
@@ -255,7 +255,7 @@ third It is a long established fact that a reader will be distracted by the
 </ul>
 </section>
 
-<section class="nineth jumbotron text-center">
+<section class="contact jumbotron text-center">
 <ul class="col">
 <li>
    <h3> Contact Us </h3>
