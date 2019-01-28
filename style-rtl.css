@@ -2741,6 +2741,22 @@ section.working_process h1.name {
   text-decoration: underline #1ba1e2;
 }
 
+section.working_process p {
+  margin: 1em 11em;
+}
+
+section.working_process .slider {
+  padding-top: 8em;
+}
+
+section.working_process .row.story {
+  padding-top: 4em;
+}
+
+section.working_process .row.story .col-sm {
+  text-align: right;
+}
+
 section.working_process .timeline {
   width: 100%;
   height: 100px;
@@ -2750,65 +2766,62 @@ section.working_process .timeline {
   justify-content: center;
 }
 
-section.working_process .timeline .events {
-  position: relative;
-  background-color: #959595;
-  height: 3px;
-  width: 100%;
-  border-radius: 4px;
-  margin: 5em 0;
+section.working_process .timeline .progressbar {
+  counter-reset: step;
+  margin-top: 75px;
+  padding: 0;
+  counter-increment: step 2014;
 }
 
-section.working_process .timeline .events ol {
-  margin: 0;
-  padding: 0;
+section.working_process .timeline .progressbar li {
+  list-style-type: none;
+  float: right;
+  width: 33.33%;
+  position: relative;
   text-align: center;
+  letter-spacing: 2px;
 }
 
-section.working_process .timeline .events ul {
-  list-style: none;
+section.working_process .timeline .progressbar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border: 3px solid #484848;
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  border-radius: 50%;
+  background-color: #484848;
+  letter-spacing: 0px;
 }
 
-section.working_process .timeline .events ul li {
-  display: inline-block;
-  width: 24.65%;
-  margin: 0;
-  padding: 0;
-}
-
-section.working_process .timeline .events ul li a {
-  font-family: "Arapey", sans-serif;
-  font-style: italic;
-  font-size: 1.25em;
-  color: #959595;
-  text-decoration: none;
-  position: relative;
-  top: -32px;
-}
-
-section.working_process .timeline .events ul li a :after {
+section.working_process .timeline .progressbar li:after {
   content: "";
   position: absolute;
-  bottom: -25px;
-  right: 50%;
-  left: auto;
-  height: 20px;
-  width: 20px;
-  border-radius: 50%;
-  border: 3px solid #959595;
-  background-color: #fbfbfb;
-  transition: 0.3s ease;
-  transform: translateX(50%);
+  width: 100%;
+  height: 3px;
+  background-color: #484848;
+  top: 25px;
+  right: -50%;
+  z-index: -1;
 }
 
-section.working_process .timeline .events ul li a hover::after {
-  background-color: #1ba1e2;
-  border-color: #1ba1e2;
+section.working_process .timeline .progressbar li:first-child:after {
+  content: none;
 }
 
-section.working_process .timeline .events ul li a selected:after {
-  background-color: #1ba1e2;
-  border-color: #1ba1e2;
+section.working_process .timeline .progressbar li.active {
+  color: #484848;
+}
+
+section.working_process .timeline .progressbar li.active:before {
+  border-color: #484848;
+}
+
+section.working_process .timeline .progressbar li.active + li:after {
+  background-color: #484848;
 }
 
 section.testimonials {
@@ -2817,18 +2830,50 @@ section.testimonials {
   height: 29em;
 }
 
-section.testimonials div,
+section.testimonials .container {
+  transform: skewY(-4deg);
+}
+
+section.testimonials .container h1.name {
+  text-decoration: underline #1ba1e2;
+}
+
+section.testimonials .container p.intro {
+  margin: 1em 11em;
+  padding-top: 1.5em;
+}
+
 section.testimonials ul {
   transform: skewY(-4deg);
   list-style-type: none;
 }
 
-section.testimonials li.left {
+section.testimonials ul div.img {
+  height: 111px;
+  width: 111px;
+  border-radius: 50%;
+  margin-right: 9em;
+  background-color: #484848;
+}
+
+section.testimonials ul li h3.name {
+  padding-top: 1.5em;
+}
+
+section.testimonials ul li span.job {
+  color: #1ba1e2;
+}
+
+section.testimonials ul li p {
+  padding: 0 1.5em;
+}
+
+section.testimonials ul li.left {
   float: right;
   width: 33%;
 }
 
-section.testimonials li.right {
+section.testimonials ul li.right {
   float: left;
   width: 33%;
 }

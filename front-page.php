@@ -76,45 +76,34 @@ get_header();
 </div>
  <div class="timeline">
       <div class="events">
-        <ol>
-          <ul>
-            <li>
-              <a href="#0">Plan</a>
-            </li>
-            <li>
-              <a href="#1" class="selected">Design</a>
-            </li>
-            <li>
-              <a href="#2">Development</a>
-            </li>
-            <li>
-              <a href="#3">Testing</a>
-            </li>
-						<li>
-              <a href="#4">Launch</a>
-            </li>
-          </ul>
-        </ol>
+        <ul class="progressbar">
+  <li class="active">Designer at Google</li>
+  <li class="active">Freelance Developer</li>
+  <li>Microsoft ???</li>
+</ul>
       </div>
     </div>
     <div> 
-			<h1> thi is the slider </h1>
-			<div class=" stories">
 
-<div class="row">
+    <div class="slider">
+			<h1> thi is the slider </h1>
+</div>
+			<div class=" container stories">
+
+<div class="row story">
  <div class="col-sm">
 first It is a long established fact that a reader will be distracted by the 
 						readable content of a page when looking at its layout. The point of 
 						using Lorem Ipsum is that it has a more-or-less normal distribution 
 						of letters, as opposed to using 'Content here,
 </div>
-<div class="col-xs-6">
+<div class="col-sm">
 second It is a long established fact that a reader will be distracted by the 
 						readable content of a page when looking at its layout. The point of 
 						using Lorem Ipsum is that it has a more-or-less normal distribution 
 						of letters, as opposed to using 'Content here,
 </div>
-<div class="col-xs-6 .col-sm-4">
+<div class="col-sm">
 third It is a long established fact that a reader will be distracted by the 
 						readable content of a page when looking at its layout. The point of 
 						using Lorem Ipsum is that it has a more-or-less normal distribution 
@@ -129,14 +118,15 @@ third It is a long established fact that a reader will be distracted by the
 
 <section class="testimonials jumbotron text-center">
 			<div class="container">
-				<h1 class="name jumbotron-heading">Working Process</h1>
-					<p>
+				<h1 class="name jumbotron-heading">Testimonials</h1>
+					<p class="into">
+						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
 						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet. 							
 				</p>
 </div>
 <ul>
   <li class="left">
-	   <img src="#">
+	   <div class="img"></div>
 		 <h3 class="name">Jacob Lawrence</h3>
 		 <span class="job">Magic Studio </span>
 		 <p> It is a long established fact that
@@ -144,7 +134,7 @@ third It is a long established fact that a reader will be distracted by the
 			readable content of a page when </p>
 	</li>
 	<li class="right">
-	   <img src="#">
+	   <div class="img"></div>
 		 <h3 class="name">Jacob Lawrence</h3>
 		 <span class="job">Magic Studio </span>
 		 <p> It is a long established fact that
@@ -152,7 +142,7 @@ third It is a long established fact that a reader will be distracted by the
 			readable content of a page when </p>
 	</li>
 	<li class="right">
-	   <img src="#">
+	   <div class="img"></div>
 		 <h3 class="name">Jacob Lawrence</h3>
 		 <span class="job">Magic Studio </span>
 		 <p> It is a long established fact that
