@@ -21,8 +21,8 @@ get_header();
 		<main id="main" class="site-main">
 		<section class="corp_design jumbotron text-center">
 			<div class="container">
-				<h1 class="name jumbotron-heading">corporate design</h1>
-				<p class="lead text-muted">lorem inpsum lorem ipsum</p>
+				<h1 class="name jumbotron-heading">corporate <strong>design</strong></h1>
+				<p class="lead">Web sites still in their infancy. Various versions have evolved</p>
 				<p>
 					<a href="#" class="btn btn-primary my-2">Buy now</a>					
 				</p>
