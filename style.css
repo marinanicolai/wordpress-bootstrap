@@ -2655,13 +2655,39 @@ section.clean_unique_design {
   background-color: #ffffff;
 }
 
+section.clean_unique_design .container {
+  padding: 0 9em;
+}
+
 section.clean_unique_design p.buttons {
   display: flex;
   justify-content: center;
 }
 
-section.clean_unique_design p.buttons a.btn {
+section.clean_unique_design a.btn {
   margin: 1em;
+  height: 45px;
+  width: 152px;
+}
+
+section.clean_unique_design .btn:hover {
+  cursor: pointer;
+}
+
+section.clean_unique_design .btn-default {
+  border: 1px solid #1ba1e2;
+  background-color: #ffffff;
+}
+
+section.clean_unique_design .btn-primary {
+  border: 1px solid #1ba1e2;
+  background-color: #1ba1e2;
+  color: #ffffff;
+}
+
+section.clean_unique_design span {
+  color: #1ba1e2;
+  padding: 1.5em 0;
 }
 
 section.know_about_us {

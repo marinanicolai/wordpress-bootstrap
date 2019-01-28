@@ -32,9 +32,13 @@ get_header();
 		<section class="clean_unique_design jumbotron text-center">
 			<div class="container">
 				<h1 class="name jumbotron-heading">ForCorporate Clean and Unique Design</h1>
-					<p class="buttons">
-						<a href="#" class="btn btn-primary my-2">Buy now</a> 	or 
-						<a href="#" class="btn btn-primary my-2">Buy now</a>								
+				<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.Neque porro
+						 quisquam est, qui dolorem ipsum quia dolor sit amet.Neque porro
+						 quisquam est, qui dolorem ipsum quia dolor sit amet.</p>	
+				<p class="buttons">
+						<a href="#" class="btn btn-default ">Read more</a> 	
+						<span>or</span> 
+						<a href="#" class="btn btn-primary ">Buy now</a>								
 				</p>
 </div>
 </section>

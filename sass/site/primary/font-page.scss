@@ -10,40 +10,60 @@ $colors: (
 	@return map-get($colors, $color-name);
 }
 
-section {
-	&.corp_design {
-		height: 57em;
-		background-color: color(second);
-		clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
+section.corp_design {
+	height: 57em;
+	background-color: color(second);
+	clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
 
-		.container {
-			padding-top: 11em;
-		}
-
-		h1.name,
-		p.lead,
-		a {
-			color: color(main);
-		}
-
-		h1 {
-			text-transform: uppercase;
-			font-size: 4.5em;
-		}
-		p.lead {
-			padding: 1.5em;
-		}
+	.container {
+		padding-top: 11em;
 	}
 
-	&.clean_unique_design {
+	h1.name,
+	p.lead,
+	a {
+		color: color(main);
+	}
+
+	h1 {
+		text-transform: uppercase;
+		font-size: 4.5em;
+	}
+	p.lead {
+		padding: 1.5em;
+	}
+}
+
+section.clean_unique_design {
+	background-color: color(main);
+	.container {
+		padding: 0 9em;
+	}
+	p.buttons {
+		display: flex;
+		justify-content: center;
+	}
+
+	a.btn {
+		margin: 1em;
+		height: 45px;
+		width: 152px;
+	}
+	.btn:hover {
+		cursor: pointer;
+	}
+	.btn-default {
+		border: 1px solid color(button);
 		background-color: color(main);
-		p.buttons {
-			display: flex;
-			justify-content: center;
-			a.btn {
-				margin: 1em;
-			}
-		}
+	}
+	.btn-primary {
+		border: 1px solid color(button);
+		background-color: color(button);
+		color: color(main);
+	}
+	span {
+		color: #1ba1e2;
+		padding: 1.5em 0;
 	}
 }
 
