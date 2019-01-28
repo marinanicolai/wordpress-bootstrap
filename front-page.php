@@ -119,7 +119,7 @@ third It is a long established fact that a reader will be distracted by the
 <section class="testimonials jumbotron text-center">
 			<div class="container">
 				<h1 class="name jumbotron-heading">Testimonials</h1>
-					<p class="into">
+					<p class="intro">
 						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
 						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet. 							
 				</p>
