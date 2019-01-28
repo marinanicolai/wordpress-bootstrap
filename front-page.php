@@ -56,8 +56,8 @@ get_header();
 							web page editors now use Lorem Ipsum as their default model text,
 							 and a search for 'lorem ipsum' will uncover many web sites still
 							  in their infancy.</p>
-				  <p class="buttons">
-						<a href="#" class="btn btn-primary my-2">Buy now</a>
+				  <p class="button">
+						<a href="#" class="btn btn-primary my-2">Buy this Theme</a>
 						</p>
 			</div>
 			<div class="picture">

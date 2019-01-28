@@ -667,28 +667,6 @@ body.page .main-navigation {
   margin-left: calc( .25 * 1rem);
 }
 
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu {
-  display: block;
-  right: 0;
-  margin-top: 0;
-  opacity: 1;
-  width: auto;
-  min-width: 100%;
-  /* Non-mobile position */
-  /* Nested sub-menu dashes */
-}
-
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu {
-  display: block;
-  right: 0;
-  margin-top: 0;
-  opacity: 1;
-  width: auto;
-  min-width: 100%;
-  /* Non-mobile position */
-  /* Nested sub-menu dashes */
-}
-
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu {
   display: block;
   right: 0;
@@ -701,36 +679,6 @@ body.page .main-navigation {
 }
 
 @media only screen and (min-width: 768px) {
-  .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu {
-    display: block;
-    margin-top: 0;
-    opacity: 1;
-    position: absolute;
-    right: 0;
-    left: auto;
-    top: auto;
-    bottom: auto;
-    height: auto;
-    min-width: -moz-max-content;
-    min-width: -webkit-max-content;
-    min-width: max-content;
-    transform: none;
-  }
-  .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu {
-    display: block;
-    margin-top: 0;
-    opacity: 1;
-    position: absolute;
-    right: 0;
-    left: auto;
-    top: auto;
-    bottom: auto;
-    height: auto;
-    min-width: -moz-max-content;
-    min-width: -webkit-max-content;
-    min-width: max-content;
-    transform: none;
-  }
   .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu {
     display: block;
     margin-top: 0;
@@ -748,20 +696,6 @@ body.page .main-navigation {
   }
 }
 
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu.hidden-links {
-  right: 0;
-  width: 100%;
-  display: table;
-  position: absolute;
-}
-
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu.hidden-links {
-  right: 0;
-  width: 100%;
-  display: table;
-  position: absolute;
-}
-
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu.hidden-links {
   right: 0;
   width: 100%;
@@ -770,18 +704,6 @@ body.page .main-navigation {
 }
 
 @media only screen and (min-width: 768px) {
-  .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu.hidden-links {
-    left: 0;
-    right: auto;
-    display: block;
-    width: max-content;
-  }
-  .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu.hidden-links {
-    left: 0;
-    right: auto;
-    display: block;
-    width: max-content;
-  }
   .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu.hidden-links {
     left: 0;
     right: auto;
@@ -790,36 +712,8 @@ body.page .main-navigation {
   }
 }
 
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .submenu-expand {
-  display: none;
-}
-
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .submenu-expand {
-  display: none;
-}
-
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu .submenu-expand {
   display: none;
-}
-
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu {
-  display: block;
-  margin-top: inherit;
-  position: relative;
-  width: 100%;
-  right: 0;
-  opacity: 1;
-  /* Non-mobile position */
-}
-
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu {
-  display: block;
-  margin-top: inherit;
-  position: relative;
-  width: 100%;
-  right: 0;
-  opacity: 1;
-  /* Non-mobile position */
 }
 
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu .sub-menu {
@@ -833,44 +727,14 @@ body.page .main-navigation {
 }
 
 @media only screen and (min-width: 768px) {
-  .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu {
-    float: none;
-    max-width: 100%;
-  }
-  .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu {
-    float: none;
-    max-width: 100%;
-  }
   .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu .sub-menu {
     float: none;
     max-width: 100%;
   }
 }
 
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu {
-  counter-reset: submenu;
-}
-
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu {
-  counter-reset: submenu;
-}
-
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu .sub-menu {
   counter-reset: submenu;
-}
-
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu > li > a::before {
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
-  font-weight: normal;
-  content: "– " counters(submenu, "– ", none);
-  counter-increment: submenu;
-}
-
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu > li > a::before {
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
-  font-weight: normal;
-  content: "– " counters(submenu, "– ", none);
-  counter-increment: submenu;
 }
 
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu .sub-menu > li > a::before {
@@ -2694,28 +2558,28 @@ body.page .main-navigation {
   margin-left: 1rem;
 }
 
-.corp_design {
+section.corp_design {
   height: 57em;
   background-color: #484848;
   clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
 }
 
-.corp_design .container {
+section.corp_design .container {
   padding-top: 11em;
 }
 
-.corp_design h1.name,
-.corp_design p.lead,
-.corp_design a {
+section.corp_design h1.name,
+section.corp_design p.lead,
+section.corp_design a {
   color: #ffffff;
 }
 
-.corp_design h1 {
+section.corp_design h1 {
   text-transform: uppercase;
   font-size: 4.5em;
 }
 
-.corp_design p.lead {
+section.corp_design p.lead {
   padding: 1.5em;
 }
 
@@ -2749,7 +2613,7 @@ section.clean_unique_design .btn-default {
 
 section.clean_unique_design .btn-primary {
   border: 1px solid #1ba1e2;
-  background-color: #1ba1e2 2;
+  background-color: #1ba1e2;
   color: #ffffff;
 }
 
@@ -2759,7 +2623,7 @@ section.clean_unique_design span {
 }
 
 section.know_about_us {
-  background-color: #c8c8c8;
+  background-color: #fbfbfb;
   height: 29em;
   transform: skewY(4deg);
 }
@@ -2770,12 +2634,34 @@ section.know_about_us p {
   transform: skewY(-4deg);
 }
 
+section.know_about_us h1.name {
+  text-decoration: underline #1ba1e2;
+}
+
 section.know_about_us .text {
   float: right;
   width: 50%;
 }
 
-section.know_about_us .picture {
+section.know_about_us .text h3,
+section.know_about_us .text p {
+  text-align: right;
+}
+
+section.know_about_us .text p {
+  padding-top: 2em;
+}
+
+section.know_about_us .text p.button a.btn {
+  border: 1px solid #1ba1e2;
+  background-color: #1ba1e2;
+  color: #ffffff;
+  margin: 1em;
+  height: 45px;
+  width: 152px;
+}
+
+section.know_about_us .text p.button .picture {
   width: 50%;
 }
 
@@ -2838,7 +2724,7 @@ section.working_process .timeline .events ul li a :after {
   width: 20px;
   border-radius: 50%;
   border: 3px solid #959595;
-  background-color: #c8c8c8;
+  background-color: #fbfbfb;
   transition: 0.3s ease;
   transform: translateX(50%);
 }
@@ -2854,7 +2740,7 @@ section.working_process .timeline .events ul li a selected:after {
 }
 
 section.testimonials {
-  background-color: #c8c8c8;
+  background-color: #fbfbfb;
   transform: skewY(4deg);
   height: 29em;
 }
@@ -2915,7 +2801,7 @@ section.our_portofolio li.large {
 }
 
 section.purchase {
-  background-color: #c8c8c8;
+  background-color: #fbfbfb;
   transform: skewY(4deg);
 }
 
@@ -2951,7 +2837,7 @@ section.our_team img.profile {
 section.contact {
   background-color: black;
   clip-path: polygon(0 30%, 100% 0%, 100% 100%, 0% 100%);
-  color: #c8c8c8;
+  color: #fbfbfb;
 }
 
 section.contact ul.col {
@@ -3007,7 +2893,7 @@ section.contact ul.col ul.lates_twe li {
   --main: #ffffff;
   --second: #484848;
   --second-light: #959595;
-  --second-lighter: #c8c8c8;
+  --second-lighter: #fbfbfb;
   --second-dark: black;
   --button: #1ba1e2;
   --primary: #007bff;

@@ -2,7 +2,7 @@ $colors: (
 	main: #ffffff,
 	second: #484848,
 	/*this color is #60606 */ second-light: lighten(#484848, 30%),
-	/*this color is #faf9f9 */ second-lighter: lighten(#484848, 50%),
+	/*this color is #faf9f9 */ second-lighter: lighten(#484848, 70%),
 	/*this color is #343434*/ second-dark: darken(#484848, 30%),
 	button: #1ba1e2
 );
@@ -62,7 +62,7 @@ section.clean_unique_design {
 		color: color(main);
 	}
 	span {
-		color: #1ba1e2;
+		color: color(button);
 		padding: 1.5em 0;
 	}
 }
@@ -76,12 +76,33 @@ section.know_about_us {
 	p {
 		transform: skewY(4deg);
 	}
+	h1.name {
+		text-decoration: underline color(button);
+	}
+
 	.text {
 		float: left;
 		width: 50%;
-	}
-	.picture {
-		width: 50%;
+		h3,
+		p {
+			text-align: left;
+		}
+		p {
+			padding-top: 2em;
+		}
+		p.button {
+			a.btn {
+				border: 1px solid color(button);
+				background-color: color(button);
+				color: color(main);
+				margin: 1em;
+				height: 45px;
+				width: 152px;
+			}
+			.picture {
+				width: 50%;
+			}
+		}
 	}
 }
 
