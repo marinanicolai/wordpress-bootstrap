@@ -70,7 +70,8 @@ get_header();
 			<div class="container">
 				<h1 class="name jumbotron-heading">Working Process</h1>
 					<p>
-						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet. 							
+						Neque porro quisquam est, qui dolorem ipsum quia dolor 
+						sit amet.Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.  							
 				</p>
 </div>
  <div class="timeline">
