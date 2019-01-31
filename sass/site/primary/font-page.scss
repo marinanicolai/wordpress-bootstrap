@@ -188,7 +188,7 @@ section.working_process {
 section.testimonials {
 	background-color: color(second-lighter);
 	transform: skewY(-4deg);
-	height: 29em;
+	height: 35em;
 	.container {
 		transform: skewY(4deg);
 		h1.name {
@@ -235,9 +235,17 @@ section.testimonials {
 
 section.our_portofolio {
 	background-color: color(main);
+	h1.name {
+		text-decoration: underline color(button);
+	}
+	p.intro {
+		margin: 1em 11em;
+		padding-top: 1em;
+	}
 	.row {
 		display: flex;
 		justify-content: center;
+		padding-top: 4.5em;
 	}
 	div.left {
 		float: left;
@@ -267,30 +275,66 @@ section.our_portofolio {
 section.purchase {
 	background-color: color(second-lighter);
 	transform: skewY(-4deg);
+	.container {
+		display: flex;
+		justify-content: center;
+		padding-top: 2.7em;
+	}
 	p {
 		transform: skewY(4deg);
 	}
 	p.left {
 		float: left;
 	}
-	p.right {
+	p.buttons.right {
 		float: right;
+		padding-left: 2em;
 	}
 }
 
 section.our_team {
 	background-color: color(main);
-	ul {
-		list-style-type: none;
-		display: flex;
-		padding-right: 2em 10em 0 10em;
-		justify-content: space-around;
+	h1.name {
+		text-decoration: underline color(button);
+	}
+	p {
+		margin: 1em 11em;
+		padding-top: 1em;
 	}
 
-	img.profile {
-		width: 272px;
-		height: 272px;
-		background-color: color(second);
+	ul.team {
+		list-style-type: none;
+		display: flex;
+		justify-content: space-around;
+		padding-top: 5em;
+		li {
+			padding-right: 2em;
+			li:last-child {
+				padding-right: 0;
+			}
+			img.profile {
+				width: 272px;
+				height: 272px;
+				background-color: color(second);
+			}
+			h3 {
+				padding: 1em 0 0.5em 0;
+			}
+			h4 {
+				padding-bottom: 1em;
+				color: color(button);
+			}
+			i {
+				font-size: 2em;
+			}
+		}
+
+		ul.social {
+			padding: 0;
+			list-style-type: none;
+			display: flex;
+			justify-content: center;
+		}
 	}
 }
 
@@ -306,13 +350,22 @@ section.contact {
 		li {
 			width: 33%;
 		}
+		h3,
+		h4,
+		p,
+		span {
+			text-transform: capitalize;
+		}
+		h4 {
+			font-size: 1em;
+		}
 		ul.contact_us {
 			li {
 				display: flex;
-				justify-content: center;
-				width: 19em;
+				width: auto;
 				h3 {
 					font-size: 1em;
+					padding-bottom: 2em;
 				}
 			}
 		}
@@ -320,6 +373,7 @@ section.contact {
 			list-style-type: none;
 			li {
 				width: auto;
+				display: flex;
 			}
 		}
 	}

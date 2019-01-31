@@ -234,6 +234,7 @@ function twentynineteen_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'twentynineteen_scripts' );
 
+
 /**
  * Fix skip link focus in IE11.
  *

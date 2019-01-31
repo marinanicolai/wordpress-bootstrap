@@ -2827,7 +2827,7 @@ section.working_process .timeline .progressbar li.active + li:after {
 section.testimonials {
   background-color: #fbfbfb;
   transform: skewY(-4deg);
-  height: 29em;
+  height: 35em;
 }
 
 section.testimonials .container {
@@ -2882,9 +2882,19 @@ section.our_portofolio {
   background-color: #ffffff;
 }
 
+section.our_portofolio h1.name {
+  text-decoration: underline #1ba1e2;
+}
+
+section.our_portofolio p.intro {
+  margin: 1em 11em;
+  padding-top: 1em;
+}
+
 section.our_portofolio .row {
   display: flex;
   justify-content: center;
+  padding-top: 4.5em;
 }
 
 section.our_portofolio div.left {
@@ -2922,6 +2932,12 @@ section.purchase {
   transform: skewY(-4deg);
 }
 
+section.purchase .container {
+  display: flex;
+  justify-content: center;
+  padding-top: 2.7em;
+}
+
 section.purchase p {
   transform: skewY(4deg);
 }
@@ -2930,25 +2946,63 @@ section.purchase p.left {
   float: left;
 }
 
-section.purchase p.right {
+section.purchase p.buttons.right {
   float: right;
+  padding-left: 2em;
 }
 
 section.our_team {
   background-color: #ffffff;
 }
 
-section.our_team ul {
-  list-style-type: none;
-  display: flex;
-  padding-right: 2em 10em 0 10em;
-  justify-content: space-around;
+section.our_team h1.name {
+  text-decoration: underline #1ba1e2;
 }
 
-section.our_team img.profile {
+section.our_team p {
+  margin: 1em 11em;
+  padding-top: 1em;
+}
+
+section.our_team ul.team {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 5em;
+}
+
+section.our_team ul.team li {
+  padding-right: 2em;
+}
+
+section.our_team ul.team li li:last-child {
+  padding-right: 0;
+}
+
+section.our_team ul.team li img.profile {
   width: 272px;
   height: 272px;
   background-color: #484848;
+}
+
+section.our_team ul.team li h3 {
+  padding: 1em 0 0.5em 0;
+}
+
+section.our_team ul.team li h4 {
+  padding-bottom: 1em;
+  color: #1ba1e2;
+}
+
+section.our_team ul.team li i {
+  font-size: 2em;
+}
+
+section.our_team ul.team ul.social {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
 }
 
 section.contact {
@@ -2968,14 +3022,25 @@ section.contact ul.col li {
   width: 33%;
 }
 
+section.contact ul.col h3,
+section.contact ul.col h4,
+section.contact ul.col p,
+section.contact ul.col span {
+  text-transform: capitalize;
+}
+
+section.contact ul.col h4 {
+  font-size: 1em;
+}
+
 section.contact ul.col ul.contact_us li {
   display: flex;
-  justify-content: center;
-  width: 19em;
+  width: auto;
 }
 
 section.contact ul.col ul.contact_us li h3 {
   font-size: 1em;
+  padding-bottom: 2em;
 }
 
 section.contact ul.col ul.lates_twe {
@@ -2984,6 +3049,7 @@ section.contact ul.col ul.lates_twe {
 
 section.contact ul.col ul.lates_twe li {
   width: auto;
+  display: flex;
 }
 
 /* Bootstrap */
