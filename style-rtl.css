@@ -678,17 +678,6 @@ body.page .main-navigation {
   /* Nested sub-menu dashes */
 }
 
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu {
-  display: block;
-  right: 0;
-  margin-top: 0;
-  opacity: 1;
-  width: auto;
-  min-width: 100%;
-  /* Non-mobile position */
-  /* Nested sub-menu dashes */
-}
-
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu {
   display: block;
   right: 0;
@@ -701,21 +690,6 @@ body.page .main-navigation {
 }
 
 @media only screen and (min-width: 768px) {
-  .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu {
-    display: block;
-    margin-top: 0;
-    opacity: 1;
-    position: absolute;
-    right: 0;
-    left: auto;
-    top: auto;
-    bottom: auto;
-    height: auto;
-    min-width: -moz-max-content;
-    min-width: -webkit-max-content;
-    min-width: max-content;
-    transform: none;
-  }
   .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu {
     display: block;
     margin-top: 0;
@@ -755,13 +729,6 @@ body.page .main-navigation {
   position: absolute;
 }
 
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu.hidden-links {
-  right: 0;
-  width: 100%;
-  display: table;
-  position: absolute;
-}
-
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu.hidden-links {
   right: 0;
   width: 100%;
@@ -776,22 +743,12 @@ body.page .main-navigation {
     display: block;
     width: max-content;
   }
-  .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu.hidden-links {
-    left: 0;
-    right: auto;
-    display: block;
-    width: max-content;
-  }
   .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu.hidden-links {
     left: 0;
     right: auto;
     display: block;
     width: max-content;
   }
-}
-
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .submenu-expand {
-  display: none;
 }
 
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .submenu-expand {
@@ -812,16 +769,6 @@ body.page .main-navigation {
   /* Non-mobile position */
 }
 
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu {
-  display: block;
-  margin-top: inherit;
-  position: relative;
-  width: 100%;
-  right: 0;
-  opacity: 1;
-  /* Non-mobile position */
-}
-
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu .sub-menu {
   display: block;
   margin-top: inherit;
@@ -837,10 +784,6 @@ body.page .main-navigation {
     float: none;
     max-width: 100%;
   }
-  .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu {
-    float: none;
-    max-width: 100%;
-  }
   .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu .sub-menu {
     float: none;
     max-width: 100%;
@@ -851,19 +794,8 @@ body.page .main-navigation {
   counter-reset: submenu;
 }
 
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu {
-  counter-reset: submenu;
-}
-
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas):focus-within > .sub-menu .sub-menu {
   counter-reset: submenu;
-}
-
-.main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu > li > a::before {
-  font-family: "NonBreakingSpaceOverride", "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
-  font-weight: normal;
-  content: "– " counters(submenu, "– ", none);
-  counter-increment: submenu;
 }
 
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu .sub-menu > li > a::before {
@@ -3090,21 +3022,25 @@ section.contact ul.col li {
   width: 33%;
 }
 
+section.contact ul.col li li:last-child {
+  padding-right: 0.95em;
+}
+
 section.contact ul.col h3,
 section.contact ul.col h4,
-section.contact ul.col p,
 section.contact ul.col span {
   text-transform: capitalize;
+  padding-right: 1.5em;
 }
 
 section.contact ul.col h4 {
   font-size: 1em;
+  padding-bottom: 1em;
 }
 
 section.contact ul.col ul.contact_us li {
   display: flex;
-  justify-content: center;
-  width: 19em;
+  width: auto;
 }
 
 section.contact ul.col ul.contact_us li h3 {
@@ -3117,8 +3053,48 @@ section.contact ul.col ul.lates_twe {
 }
 
 section.contact ul.col ul.lates_twe li {
+  padding: 0;
   width: auto;
   display: flex;
+}
+
+section.contact ul.col ul.lates_twe li i {
+  padding-left: 0.5em;
+}
+
+section.contact ul.col li.write_us input {
+  position: relative;
+}
+
+section.contact ul.col li.write_us input#profile {
+  margin: 0em 0.5em 0.5em 2em;
+  background-image: url(img/user-alt-solid.svg);
+}
+
+section.contact ul.col li.write_us input#pen {
+  margin-right: 0.5em;
+  width: 24.5em;
+  height: 8em;
+}
+
+section.contact ul.col li.write_us input#pen ::placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+section.contact ul.col li.write_us p.buttons {
+  float: right;
+  padding-right: 0;
+}
+
+section.contact ul.col li.write_us p.buttons a.btn {
+  border: 1px solid #1ba1e2;
+  background-color: #1ba1e2;
+  color: #ffffff;
+  margin: 1em;
+  height: 45px;
+  width: 152px;
 }
 
 /* Bootstrap */

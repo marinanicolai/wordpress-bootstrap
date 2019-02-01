@@ -291,33 +291,35 @@ third It is a long established fact that a reader will be distracted by the
    </ul>
  </li>
 
- <li>
+ <li class="tweets">
    <h3> Latest Tweets </h3>
 	  <ul class="lates_twe">
 			<li>
-				<img src="#"> 
-				<p> tweet It is a long established fact that
+				<p>
+				   <i class="fab fa-twitter"></i>
+			Tweet It is a long established fact that
 		  a reader will be distracted by the 
 			readable content of a page when</p>
 			</li>
 			
 			<li>
-				<img src="#"> 
-				<p> tweet It is a long established fact that
+				<p> 
+				<i class="fab fa-twitter"></i>
+			Tweet It is a long established fact that
 		  a reader will be distracted by the 
 			readable content of a page when</p>
       </li>
 			</ul>
  </li>
 
- <li>
+ <li class="write_us">
    <h3> Write Us </h3>
-	 <input type="name" placeholder="Name">
-	 <input type="email" placeholder="Email">
-	 <input type="textarea" placeholder="Message">
+	     <input type="name" id="profile" placeholder="Name">
+	     <input type="email" id="envelope" placeholder="Email">
+	     <input type="textarea" id="pen" placeholder="Message">
    <p class="buttons">
-						<a href="#" class="btn btn-primary my-2">Buy now</a>
-						</p>
+						<a href="#" class="btn btn-primary my-2">Send us</a>
+		</p>
  </li>
 
 

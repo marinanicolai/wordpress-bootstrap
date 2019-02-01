@@ -349,15 +349,19 @@ section.contact {
 		justify-content: space-around;
 		li {
 			width: 33%;
+			li:last-child {
+				padding-left: 0.95em;
+			}
 		}
 		h3,
 		h4,
-		p,
 		span {
 			text-transform: capitalize;
+			padding-left: 1.5em;
 		}
 		h4 {
 			font-size: 1em;
+			padding-bottom: 1em;
 		}
 		ul.contact_us {
 			li {
@@ -372,8 +376,43 @@ section.contact {
 		ul.lates_twe {
 			list-style-type: none;
 			li {
+				padding: 0;
 				width: auto;
 				display: flex;
+				i {
+					padding-right: 0.5em;
+				}
+			}
+		}
+		li.write_us {
+			input {
+				position: relative;
+			}
+			input#profile {
+				margin: 0em 2em 0.5em 0.5em;
+				background-image: url(img/user-alt-solid.svg);
+			}
+			input#pen {
+				margin-left: 0.5em;
+				width: 24.5em;
+				height: 8em;
+				::placeholder {
+					position: absolute;
+					top: 0;
+					right: 0;
+				}
+			}
+			p.buttons {
+				float: left;
+				padding-left: 0;
+				a.btn {
+					border: 1px solid color(button);
+					background-color: color(button);
+					color: color(main);
+					margin: 1em;
+					height: 45px;
+					width: 152px;
+				}
 			}
 		}
 	}
