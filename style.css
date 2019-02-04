@@ -3097,6 +3097,512 @@ section.contact ul.col li.write_us p.buttons a.btn {
   width: 152px;
 }
 
+section.know_about {
+  clip-path: polygon(0 0, 100% 0, 100% 77%, 0% 100%);
+  background-color: #fbfbfb;
+  height: 17em;
+}
+
+section.about_spike {
+  background-color: #ffffff;
+}
+
+section.about_spike h1 {
+  text-decoration: underline #1ba1e2;
+}
+
+section.about_spike .text {
+  width: 50%;
+}
+
+section.about_spike .text h3,
+section.about_spike .text h4,
+section.about_spike .text p {
+  text-align: left;
+}
+
+section.about_spike .text h3 {
+  text-decoration: underline #1ba1e2;
+}
+
+section.no-header {
+  background-color: #fbfbfb;
+  transform: skewY(-4deg);
+  height: 22em;
+}
+
+section.no-header div.row {
+  transform: skewY(4deg);
+  padding-top: 4em;
+}
+
+section.team_sec {
+  background-color: #ffffff;
+}
+
+section.team_sec h1.name {
+  text-decoration: underline #1ba1e2;
+}
+
+section.team_sec p {
+  margin: 1em 11em;
+  padding-top: 1em;
+}
+
+section.team_sec ul.team {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 5em;
+}
+
+section.team_sec ul.team li {
+  padding-right: 2em;
+}
+
+section.team_sec ul.team li li:last-child {
+  padding-right: 0;
+}
+
+section.team_sec ul.team li img.profile {
+  width: 272px;
+  height: 272px;
+  background-color: #484848;
+}
+
+section.team_sec ul.team li h3 {
+  padding: 1em 0 0.5em 0;
+}
+
+section.team_sec ul.team li h4 {
+  padding-bottom: 1em;
+  color: #1ba1e2;
+}
+
+section.team_sec ul.team li i {
+  font-size: 2em;
+}
+
+section.team_sec ul.team ul.social {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+section.our_skills {
+  background-color: #fbfbfb;
+  transform: skewY(-4deg);
+}
+
+section.our_skills div {
+  transform: skewY(4deg);
+}
+
+section.our_skills div h1 {
+  text-decoration: underline #1ba1e2;
+}
+
+section.our_clients {
+  background-color: #ffffff;
+}
+
+section.our_clients h1 {
+  text-decoration: underline #1ba1e2;
+}
+
+section.us_contact {
+  background-color: black;
+  clip-path: polygon(0 30%, 100% 0%, 100% 100%, 0% 100%);
+  color: #fbfbfb;
+}
+
+section.us_contact ul.col {
+  padding-top: 4em;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+section.us_contact ul.col li {
+  width: 33%;
+}
+
+section.us_contact ul.col li li:last-child {
+  padding-left: 0.95em;
+}
+
+section.us_contact ul.col h3,
+section.us_contact ul.col h4,
+section.us_contact ul.col span {
+  text-transform: capitalize;
+  padding-left: 1.5em;
+}
+
+section.us_contact ul.col h4 {
+  font-size: 1em;
+  padding-bottom: 1em;
+}
+
+section.us_contact ul.col ul.contact_us li {
+  display: flex;
+  width: auto;
+}
+
+section.us_contact ul.col ul.contact_us li h3 {
+  font-size: 1em;
+  padding-bottom: 2em;
+}
+
+section.us_contact ul.col ul.lates_twe {
+  list-style-type: none;
+}
+
+section.us_contact ul.col ul.lates_twe li {
+  padding: 0;
+  width: auto;
+  display: flex;
+}
+
+section.us_contact ul.col ul.lates_twe li i {
+  padding-right: 0.5em;
+}
+
+section.us_contact ul.col li.write_us input {
+  position: relative;
+}
+
+section.us_contact ul.col li.write_us input#profile {
+  margin: 0em 2em 0.5em 0.5em;
+  background-image: url(img/user-alt-solid.svg);
+}
+
+section.us_contact ul.col li.write_us input#pen {
+  margin-left: 0.5em;
+  width: 24.5em;
+  height: 8em;
+}
+
+section.us_contact ul.col li.write_us input#pen ::placeholder {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+section.us_contact ul.col li.write_us p.buttons {
+  float: left;
+  padding-left: 0;
+}
+
+section.us_contact ul.col li.write_us p.buttons a.btn {
+  border: 1px solid #1ba1e2;
+  background-color: #1ba1e2;
+  color: #ffffff;
+  margin: 1em;
+  height: 45px;
+  width: 152px;
+}
+
+section.our_services {
+  clip-path: polygon(0 0, 100% 0, 100% 77%, 0% 100%);
+  background-color: #fbfbfb;
+  height: 17em;
+}
+
+section.how_are_services {
+  background-color: #ffffff;
+  transform: skewY(-4deg);
+  height: 41em;
+}
+
+section.how_are_services div.container {
+  transform: skewY(4deg);
+}
+
+section.how_are_services div.container h1.name {
+  text-decoration: underline #1ba1e2;
+  text-align: center;
+}
+
+section.how_are_services div.container div.row {
+  padding-top: 4em;
+}
+
+section.testimonials {
+  background-color: #fbfbfb;
+  transform: skewY(-4deg);
+  height: 35em;
+}
+
+section.testimonials .container {
+  transform: skewY(4deg);
+}
+
+section.testimonials .container h1.name {
+  text-decoration: underline #1ba1e2;
+}
+
+section.testimonials .container p.intro {
+  margin: 1em 11em;
+  padding-top: 1em;
+}
+
+section.testimonials ul {
+  transform: skewY(4deg);
+  list-style-type: none;
+}
+
+section.testimonials ul div.img {
+  height: 111px;
+  width: 111px;
+  border-radius: 50%;
+  margin-left: 9em;
+  background-color: #484848;
+}
+
+section.testimonials ul li h3.name {
+  padding-top: 1.5em;
+}
+
+section.testimonials ul li span.job {
+  color: #1ba1e2;
+}
+
+section.testimonials ul li p {
+  padding: 0 1.5em;
+}
+
+section.testimonials ul li.left {
+  float: left;
+  width: 33%;
+}
+
+section.testimonials ul li.right {
+  float: right;
+  width: 33%;
+}
+
+section.process_of_working {
+  background-color: #ffffff;
+}
+
+section.process_of_working h1.name {
+  text-decoration: underline #1ba1e2;
+}
+
+section.process_of_working p {
+  margin: 1em 11em;
+}
+
+section.process_of_working .slider {
+  padding-top: 8em;
+}
+
+section.process_of_working .row.story {
+  padding-top: 4em;
+}
+
+section.process_of_working .row.story .col-sm {
+  text-align: left;
+}
+
+section.process_of_working .timeline {
+  width: 100%;
+  height: 100px;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+section.process_of_working .timeline .progressbar {
+  counter-reset: step;
+  margin-top: 75px;
+  padding: 0;
+  counter-increment: step 2014;
+}
+
+section.process_of_working .timeline .progressbar li {
+  list-style-type: none;
+  float: left;
+  width: 33.33%;
+  position: relative;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+section.process_of_working .timeline .progressbar li:before {
+  content: counter(step);
+  counter-increment: step;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border: 3px solid #484848;
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  border-radius: 50%;
+  background-color: #484848;
+  letter-spacing: 0px;
+}
+
+section.process_of_working .timeline .progressbar li:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #484848;
+  top: 25px;
+  left: -50%;
+  z-index: -1;
+}
+
+section.process_of_working .timeline .progressbar li:first-child:after {
+  content: none;
+}
+
+section.process_of_working .timeline .progressbar li.active {
+  color: #484848;
+}
+
+section.process_of_working .timeline .progressbar li.active:before {
+  border-color: #484848;
+}
+
+section.process_of_working .timeline .progressbar li.active + li:after {
+  background-color: #484848;
+}
+
+section.buy {
+  background-color: #fbfbfb;
+  transform: skewY(-4deg);
+}
+
+section.buy .container {
+  display: flex;
+  justify-content: center;
+  padding-top: 2.7em;
+}
+
+section.buy p {
+  transform: skewY(4deg);
+}
+
+section.buy p.left {
+  float: left;
+}
+
+section.buy p.buttons.right {
+  float: right;
+  padding-left: 2em;
+}
+
+section.clients {
+  background-color: #ffffff;
+}
+
+section.clients h1 {
+  text-decoration: underline #1ba1e2;
+}
+
+section.get_in_touch {
+  background-color: black;
+  clip-path: polygon(0 30%, 100% 0%, 100% 100%, 0% 100%);
+  color: #fbfbfb;
+}
+
+section.get_in_touch ul.col {
+  padding-top: 4em;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+section.get_in_touch ul.col li {
+  width: 33%;
+}
+
+section.get_in_touch ul.col li li:last-child {
+  padding-left: 0.95em;
+}
+
+section.get_in_touch ul.col h3,
+section.get_in_touch ul.col h4,
+section.get_in_touch ul.col span {
+  text-transform: capitalize;
+  padding-left: 1.5em;
+}
+
+section.get_in_touch ul.col h4 {
+  font-size: 1em;
+  padding-bottom: 1em;
+}
+
+section.get_in_touch ul.col ul.contact_us li {
+  display: flex;
+  width: auto;
+}
+
+section.get_in_touch ul.col ul.contact_us li h3 {
+  font-size: 1em;
+  padding-bottom: 2em;
+}
+
+section.get_in_touch ul.col ul.lates_twe {
+  list-style-type: none;
+}
+
+section.get_in_touch ul.col ul.lates_twe li {
+  padding: 0;
+  width: auto;
+  display: flex;
+}
+
+section.get_in_touch ul.col ul.lates_twe li i {
+  padding-right: 0.5em;
+}
+
+section.get_in_touch ul.col li.write_us input {
+  position: relative;
+}
+
+section.get_in_touch ul.col li.write_us input#profile {
+  margin: 0em 2em 0.5em 0.5em;
+  background-image: url(img/user-alt-solid.svg);
+}
+
+section.get_in_touch ul.col li.write_us input#pen {
+  margin-left: 0.5em;
+  width: 24.5em;
+  height: 8em;
+}
+
+section.get_in_touch ul.col li.write_us input#pen ::placeholder {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+section.get_in_touch ul.col li.write_us p.buttons {
+  float: left;
+  padding-left: 0;
+}
+
+section.get_in_touch ul.col li.write_us p.buttons a.btn {
+  border: 1px solid #1ba1e2;
+  background-color: #1ba1e2;
+  color: #ffffff;
+  margin: 1em;
+  height: 45px;
+  width: 152px;
+}
+
+section.know_about {
+  clip-path: polygon(0 0, 100% 0, 100% 77%, 0% 100%);
+  background-color: #fbfbfb;
+  height: 17em;
+}
+
 /* Bootstrap */
 /*!
  * Bootstrap v4.2.1 (https://getbootstrap.com/)

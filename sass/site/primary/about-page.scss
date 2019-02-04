@@ -1,0 +1,190 @@
+$colors: (
+	main: #ffffff,
+	second: #484848,
+	/*this color is #60606 */ second-light: lighten(#484848, 30%),
+	/*this color is #faf9f9 */ second-lighter: lighten(#484848, 70%),
+	/*this color is #343434*/ second-dark: darken(#484848, 30%),
+	button: #1ba1e2
+);
+@function color($color-name) {
+	@return map-get($colors, $color-name);
+}
+
+section.know_about {
+	clip-path: polygon(0 0, 100% 0, 100% 77%, 0% 100%);
+	background-color: color(second-lighter);
+	height: 17em;
+}
+
+section.about_spike {
+	background-color: color(main);
+	h1 {
+		text-decoration: underline color(button);
+	}
+	.text {
+		width: 50%;
+		h3,
+		h4,
+		p {
+			text-align: left;
+		}
+
+		h3 {
+			text-decoration: underline color(button);
+		}
+	}
+}
+
+section.no-header {
+	background-color: color(second-lighter);
+	transform: skewY(-4deg);
+	height: 22em;
+	div.row {
+		transform: skewY(4deg);
+		padding-top: 4em;
+	}
+}
+
+section.team_sec {
+	background-color: color(main);
+	h1.name {
+		text-decoration: underline color(button);
+	}
+	p {
+		margin: 1em 11em;
+		padding-top: 1em;
+	}
+
+	ul.team {
+		list-style-type: none;
+		display: flex;
+		justify-content: space-around;
+		padding-top: 5em;
+		li {
+			padding-right: 2em;
+			li:last-child {
+				padding-right: 0;
+			}
+			img.profile {
+				width: 272px;
+				height: 272px;
+				background-color: color(second);
+			}
+			h3 {
+				padding: 1em 0 0.5em 0;
+			}
+			h4 {
+				padding-bottom: 1em;
+				color: color(button);
+			}
+			i {
+				font-size: 2em;
+			}
+		}
+
+		ul.social {
+			padding: 0;
+			list-style-type: none;
+			display: flex;
+			justify-content: center;
+		}
+	}
+}
+
+section.our_skills {
+	background-color: color(second-lighter);
+	transform: skewY(-4deg);
+	div {
+		transform: skewY(4deg);
+		h1 {
+			text-decoration: underline color(button);
+		}
+	}
+}
+
+section.our_clients {
+	background-color: color(main);
+	h1 {
+		text-decoration: underline color(button);
+	}
+}
+
+section.us_contact {
+	background-color: color(second-dark);
+	clip-path: polygon(0 30%, 100% 0%, 100% 100%, 0% 100%);
+	color: color(second-lighter);
+	ul.col {
+		padding-top: 4em;
+		list-style-type: none;
+		display: flex;
+		justify-content: space-around;
+		li {
+			width: 33%;
+			li:last-child {
+				padding-left: 0.95em;
+			}
+		}
+		h3,
+		h4,
+		span {
+			text-transform: capitalize;
+			padding-left: 1.5em;
+		}
+		h4 {
+			font-size: 1em;
+			padding-bottom: 1em;
+		}
+		ul.contact_us {
+			li {
+				display: flex;
+				width: auto;
+				h3 {
+					font-size: 1em;
+					padding-bottom: 2em;
+				}
+			}
+		}
+		ul.lates_twe {
+			list-style-type: none;
+			li {
+				padding: 0;
+				width: auto;
+				display: flex;
+				i {
+					padding-right: 0.5em;
+				}
+			}
+		}
+		li.write_us {
+			input {
+				position: relative;
+			}
+			input#profile {
+				margin: 0em 2em 0.5em 0.5em;
+				background-image: url(img/user-alt-solid.svg);
+			}
+			input#pen {
+				margin-left: 0.5em;
+				width: 24.5em;
+				height: 8em;
+				::placeholder {
+					position: absolute;
+					top: 0;
+					right: 0;
+				}
+			}
+			p.buttons {
+				float: left;
+				padding-left: 0;
+				a.btn {
+					border: 1px solid color(button);
+					background-color: color(button);
+					color: color(main);
+					margin: 1em;
+					height: 45px;
+					width: 152px;
+				}
+			}
+		}
+	}
+}

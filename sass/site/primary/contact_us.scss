@@ -1,0 +1,17 @@
+$colors: (
+	main: #ffffff,
+	second: #484848,
+	/*this color is #60606 */ second-light: lighten(#484848, 30%),
+	/*this color is #faf9f9 */ second-lighter: lighten(#484848, 70%),
+	/*this color is #343434*/ second-dark: darken(#484848, 30%),
+	button: #1ba1e2
+);
+@function color($color-name) {
+	@return map-get($colors, $color-name);
+}
+
+section.know_about {
+	clip-path: polygon(0 0, 100% 0, 100% 77%, 0% 100%);
+	background-color: color(second-lighter);
+	height: 17em;
+}
