@@ -3597,7 +3597,140 @@ section.get_in_touch ul.col li.write_us p.buttons a.btn {
   width: 152px;
 }
 
-section.know_about {
+.portof_nav ul.show_work {
+  display: flex;
+  width: 50vw;
+  list-style: none;
+  margin: auto;
+}
+
+.portof_nav ul.show_work li {
+  flex: 1;
+}
+
+.portofolio {
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  padding-top: 3rem;
+}
+
+.portofolio ul {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.portofolio li {
+  margin: 0.5rem;
+}
+
+.portofolio .big {
+  height: 506px;
+  width: 370px;
+  background-color: #484848;
+}
+
+.portofolio .small {
+  height: 254px;
+  width: 370px;
+  background-color: #484848;
+}
+
+section.contact {
+  background-color: black;
+  clip-path: polygon(0 30%, 100% 0%, 100% 100%, 0% 100%);
+  color: #fbfbfb;
+}
+
+section.contact ul.col {
+  padding-top: 4em;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+section.contact ul.col li {
+  width: 33%;
+}
+
+section.contact ul.col li li:last-child {
+  padding-left: 0.95em;
+}
+
+section.contact ul.col h3,
+section.contact ul.col h4,
+section.contact ul.col span {
+  text-transform: capitalize;
+  padding-left: 1.5em;
+}
+
+section.contact ul.col h4 {
+  font-size: 1em;
+  padding-bottom: 1em;
+}
+
+section.contact ul.col ul.contact_us li {
+  display: flex;
+  width: auto;
+}
+
+section.contact ul.col ul.contact_us li h3 {
+  font-size: 1em;
+  padding-bottom: 2em;
+}
+
+section.contact ul.col ul.lates_twe {
+  list-style-type: none;
+}
+
+section.contact ul.col ul.lates_twe li {
+  padding: 0;
+  width: auto;
+  display: flex;
+}
+
+section.contact ul.col ul.lates_twe li i {
+  padding-right: 0.5em;
+}
+
+section.contact ul.col li.write_us input {
+  position: relative;
+}
+
+section.contact ul.col li.write_us input#profile {
+  margin: 0em 2em 0.5em 0.5em;
+  background-image: url(img/user-alt-solid.svg);
+}
+
+section.contact ul.col li.write_us input#pen {
+  margin-left: 0.5em;
+  width: 24.5em;
+  height: 8em;
+}
+
+section.contact ul.col li.write_us input#pen ::placeholder {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+section.contact ul.col li.write_us p.buttons {
+  float: left;
+  padding-left: 0;
+}
+
+section.contact ul.col li.write_us p.buttons a.btn {
+  border: 1px solid #1ba1e2;
+  background-color: #1ba1e2;
+  color: #ffffff;
+  margin: 1em;
+  height: 45px;
+  width: 152px;
+}
+
+section.get_touch {
   clip-path: polygon(0 0, 100% 0, 100% 77%, 0% 100%);
   background-color: #fbfbfb;
   height: 17em;

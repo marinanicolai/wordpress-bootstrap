@@ -6,6 +6,7 @@ $colors: (
 	/*this color is #343434*/ second-dark: darken(#484848, 30%),
 	button: #1ba1e2
 );
+
 @function color($color-name) {
 	@return map-get($colors, $color-name);
 }
@@ -14,4 +15,22 @@ section.know_about {
 	clip-path: polygon(0 0, 100% 0, 100% 77%, 0% 100%);
 	background-color: color(second-lighter);
 	height: 17em;
+	h1 {
+		color: red;
+	}
+}
+
+section.whole_portofolio {
+	li.work {
+		background-color: color(second);
+
+		li.large {
+			height: 510px;
+			width: 370px;
+		}
+		li.small {
+			height: 254px;
+			width: 370px;
+		}
+	}
 }

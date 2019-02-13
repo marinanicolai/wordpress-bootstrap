@@ -18,9 +18,9 @@ get_header();
 ?>
 
 
-<section id="primary" class="contact-us-area">
+<section id="primary" class="contact_us-area">
 		<main id="main" class="site-about">
-<section class="our_services jumbotron text-center">
+<section class="get_touch jumbotron text-center">
 		<div class="container">
         <h1 class="name jumbotron-heading">Know about us</h1>
         Home >> Contact
