@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Portfolio
+ * Template Name: Contact
  *
  * This is the most generic template file in a WordPress theme
  * and one of the two required files for a theme (the other being style.css).
@@ -17,48 +17,80 @@
 get_header();
 ?>
 
-<section id="primary" class="portfolio-area">
+
+<section id="primary" class="contact_us-area">
 		<main id="main" class="site-about">
-<section class="know jumbotron text-center">
+
+<section class="get_touch jumbotron text-center">
 		<div class="container">
         <h1 class="name jumbotron-heading">Know about us</h1>
         Home >> Portfolio
 				<p> We strive to give the best service to our clients</p>					
     </div>
 </section>
-<section class="portof_nav">
- <div class="container">   
-<ul class="show_work">
-    <li><a href="#">Show All Works </a></li>
-    <li><a href="#">Photography</a></li>
-    <li><a href="#">Visualisation </a></li>
-    <li><a href="#">Webdesign</a> </li>
-    <li><a href="#">Typography</a> </li>
-</ul>
+<section class="submit">
+
+<article class="first">
+<img scr="#">
+</article>
+<article class="form">
+<form id="myForm" action="foo.htm" method="post"> 
+<div class="form-group">
+	<i class="fas fa-band-aid"></i>
+  <input type="text" name="firstName" id="first-name" placeholder="Name(Required)"/>
 </div>
-<div class="portofolio">
-<ul>
-    <li class="big"> </li>
-    <li class="small"> </li>
-    <li class="big"> </li>
-    <li class="small"> </li>
-</ul>   
-<ul>
-    <li class="small"> </li>
-    <li class="big"> </li>
-    <li class="small"> </li>
-    <li class="big"> </li>
-</ul>   
-<ul>
-    <li class="big"> </li>
-    <li class="small"> </li>
-    <li class="big"> </li>
-    <li class="small"> </li>
-</ul>   
-</div>   
+
+<div class="form-group">
+ <i class="fas fa-band-aid"></i>
+ <input type="email" name="email" id="email" placeholder="Email(Required)"/>
+</div>
+
+<div class="form-group">
+ <i class="fas fa-band-aid"></i>
+ <input type="text" name="subject" id="subject" placeholder="Subject(Optional)"/>
+</div>
+
+<div class="form-group">
+<textarea name="message" rows="10" cols="30">
+Enter the text 
+</textarea>
+</div>
+
+<button type="submit">Submit
+</button>
+</article>
 </section>
 
-<section class="contact jumbotron text-center">
+<section class="map">
+
+</section>
+
+<section class="reach_us">
+ <ul class="contact">
+	 <li> 
+		 <i class="fas fa-band-aid"></i>
+		 <p>Star Street, Park Avenue
+        253/ 254  Jupiter East , JP 6985 </p>
+	 </li>
+	 <li> 
+		 <i class="fas fa-band-aid"></i>
+		 <p>Star Street, Park Avenue
+        253/ 254  Jupiter East , JP 6985 </p>
+	 </li>
+	 <li> 
+		 <i class="fas fa-band-aid"></i>
+		 <p>Star Street, Park Avenue
+        253/ 254  Jupiter East , JP 6985 </p>
+	 </li>
+	 <li> 
+		 <i class="fas fa-band-aid"></i>
+		 <p>Star Street, Park Avenue
+        253/ 254  Jupiter East , JP 6985 </p>
+	 </li>
+</ul> 
+</section>
+
+<section class="reach_to_us jumbotron text-center">
 <ul class="col">
 <li>
    <h3> Contact Us </h3>
@@ -122,6 +154,3 @@ get_header();
  </li>
 </ul>
 </section>
-
-
-

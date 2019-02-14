@@ -10,6 +10,12 @@ $colors: (
 	@return map-get($colors, $color-name);
 }
 
+.know {
+	clip-path: polygon(0 0, 100% 0, 100% 77%, 0% 100%);
+	background-color: color(second-lighter);
+	height: 17em;
+}
+
 .portof_nav {
 	ul.show_work {
 		display: flex;

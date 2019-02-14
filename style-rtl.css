@@ -3597,6 +3597,12 @@ section.get_in_touch ul.col li.write_us p.buttons a.btn {
   width: 152px;
 }
 
+.know {
+  clip-path: polygon(0 0, 100% 0, 100% 77%, 0% 100%);
+  background-color: #fbfbfb;
+  height: 17em;
+}
+
 .portof_nav ul.show_work {
   display: flex;
   width: 50vw;
@@ -3638,10 +3644,222 @@ section.get_in_touch ul.col li.write_us p.buttons a.btn {
   background-color: #484848;
 }
 
-section.get_touch {
+section.contact {
+  background-color: black;
+  clip-path: polygon(0 30%, 100% 0%, 100% 100%, 0% 100%);
+  color: #fbfbfb;
+}
+
+section.contact ul.col {
+  padding-top: 4em;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+section.contact ul.col li {
+  width: 33%;
+}
+
+section.contact ul.col li li:last-child {
+  padding-right: 0.95em;
+}
+
+section.contact ul.col h3,
+section.contact ul.col h4,
+section.contact ul.col span {
+  text-transform: capitalize;
+  padding-right: 1.5em;
+}
+
+section.contact ul.col h4 {
+  font-size: 1em;
+  padding-bottom: 1em;
+}
+
+section.contact ul.col ul.contact_us li {
+  display: flex;
+  width: auto;
+}
+
+section.contact ul.col ul.contact_us li h3 {
+  font-size: 1em;
+  padding-bottom: 2em;
+}
+
+section.contact ul.col ul.lates_twe {
+  list-style-type: none;
+}
+
+section.contact ul.col ul.lates_twe li {
+  padding: 0;
+  width: auto;
+  display: flex;
+}
+
+section.contact ul.col ul.lates_twe li i {
+  padding-left: 0.5em;
+}
+
+section.contact ul.col li.write_us input {
+  position: relative;
+}
+
+section.contact ul.col li.write_us input#profile {
+  margin: 0em 0.5em 0.5em 2em;
+  background-image: url(img/user-alt-solid.svg);
+}
+
+section.contact ul.col li.write_us input#pen {
+  margin-right: 0.5em;
+  width: 24.5em;
+  height: 8em;
+}
+
+section.contact ul.col li.write_us input#pen ::placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+section.contact ul.col li.write_us p.buttons {
+  float: right;
+  padding-right: 0;
+}
+
+section.contact ul.col li.write_us p.buttons a.btn {
+  border: 1px solid #1ba1e2;
+  background-color: #1ba1e2;
+  color: #ffffff;
+  margin: 1em;
+  height: 45px;
+  width: 152px;
+}
+
+.get_touch {
   clip-path: polygon(0 0, 100% 0, 100% 77%, 0% 100%);
   background-color: #fbfbfb;
   height: 17em;
+}
+
+.submit {
+  display: flex;
+}
+
+.submit article.first {
+  width: 50vw;
+}
+
+.map {
+  height: 60vh;
+  background-color: #484848;
+}
+
+.reach_us {
+  margin: auto;
+  width: 80vw;
+}
+
+.reach_us ul.contact {
+  display: flex;
+  list-style: none;
+}
+
+.reach_us ul.contact li {
+  width: 20vw;
+  padding: 2rem;
+}
+
+section.reach_to_us {
+  background-color: black;
+  clip-path: polygon(0 30%, 100% 0%, 100% 100%, 0% 100%);
+  color: #fbfbfb;
+}
+
+section.reach_to_us ul.col {
+  padding-top: 4em;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+section.reach_to_us ul.col li {
+  width: 33%;
+}
+
+section.reach_to_us ul.col li li:last-child {
+  padding-right: 0.95em;
+}
+
+section.reach_to_us ul.col h3,
+section.reach_to_us ul.col h4,
+section.reach_to_us ul.col span {
+  text-transform: capitalize;
+  padding-right: 1.5em;
+}
+
+section.reach_to_us ul.col h4 {
+  font-size: 1em;
+  padding-bottom: 1em;
+}
+
+section.reach_to_us ul.col ul.contact_us li {
+  display: flex;
+  width: auto;
+}
+
+section.reach_to_us ul.col ul.contact_us li h3 {
+  font-size: 1em;
+  padding-bottom: 2em;
+}
+
+section.reach_to_us ul.col ul.lates_twe {
+  list-style-type: none;
+}
+
+section.reach_to_us ul.col ul.lates_twe li {
+  padding: 0;
+  width: auto;
+  display: flex;
+}
+
+section.reach_to_us ul.col ul.lates_twe li i {
+  padding-left: 0.5em;
+}
+
+section.reach_to_us ul.col li.write_us input {
+  position: relative;
+}
+
+section.reach_to_us ul.col li.write_us input#profile {
+  margin: 0em 0.5em 0.5em 2em;
+  background-image: url(img/user-alt-solid.svg);
+}
+
+section.reach_to_us ul.col li.write_us input#pen {
+  margin-right: 0.5em;
+  width: 24.5em;
+  height: 8em;
+}
+
+section.reach_to_us ul.col li.write_us input#pen ::placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+section.reach_to_us ul.col li.write_us p.buttons {
+  float: right;
+  padding-right: 0;
+}
+
+section.reach_to_us ul.col li.write_us p.buttons a.btn {
+  border: 1px solid #1ba1e2;
+  background-color: #1ba1e2;
+  color: #ffffff;
+  margin: 1em;
+  height: 45px;
+  width: 152px;
 }
 
 /* Bootstrap */

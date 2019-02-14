@@ -10,8 +10,113 @@ $colors: (
 	@return map-get($colors, $color-name);
 }
 
-section.get_touch {
+.get_touch {
 	clip-path: polygon(0 0, 100% 0, 100% 77%, 0% 100%);
 	background-color: color(second-lighter);
 	height: 17em;
+}
+
+.submit {
+	display: flex;
+	article.first {
+		width: 50vw;
+	}
+}
+
+.map {
+	height: 60vh;
+	background-color: color(second);
+	margin-top: 2rem;
+}
+.reach_us {
+	margin: auto;
+	width: 80vw;
+	ul.contact {
+		display: flex;
+		list-style: none;
+		li {
+			width: 20vw;
+			padding: 2rem;
+		}
+	}
+}
+
+section.reach_to_us {
+	background-color: color(second-dark);
+	clip-path: polygon(0 30%, 100% 0%, 100% 100%, 0% 100%);
+	color: color(second-lighter);
+	ul.col {
+		padding-top: 4em;
+		list-style-type: none;
+		display: flex;
+		justify-content: space-around;
+		li {
+			width: 33%;
+			li:last-child {
+				padding-left: 0.95em;
+			}
+		}
+		h3,
+		h4,
+		span {
+			text-transform: capitalize;
+			padding-left: 1.5em;
+		}
+		h4 {
+			font-size: 1em;
+			padding-bottom: 1em;
+		}
+		ul.contact_us {
+			li {
+				display: flex;
+				width: auto;
+				h3 {
+					font-size: 1em;
+					padding-bottom: 2em;
+				}
+			}
+		}
+		ul.lates_twe {
+			list-style-type: none;
+			li {
+				padding: 0;
+				width: auto;
+				display: flex;
+				i {
+					padding-right: 0.5em;
+				}
+			}
+		}
+		li.write_us {
+			input {
+				position: relative;
+			}
+			input#profile {
+				margin: 0em 2em 0.5em 0.5em;
+				background-image: url(img/user-alt-solid.svg);
+			}
+			input#pen {
+				margin-left: 0.5em;
+				width: 24.5em;
+				height: 8em;
+				::placeholder {
+					position: absolute;
+					top: 0;
+					right: 0;
+				}
+			}
+			p.buttons {
+				float: left;
+				padding-left: 0;
+				a.btn {
+					border: 1px solid color(button);
+					background-color: color(button);
+					color: color(main);
+					margin: 1em;
+					height: 45px;
+					width: 152px;
+				}
+			}
+		}
+	}
 }
