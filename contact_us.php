@@ -78,7 +78,7 @@ Enter the text
      <p>+321 88956 23658 </p>
 	 </li>
 	 <li> 
-		 <span class="layer"><i class="far fa-envelope"></i><span>
+		 <span class="layer"><i class="far fa-envelope"></i></span>
 		 <p>ForCorporate@ForestThemes.com</p>		
       <p>ForestThemes@yahoo.com </p>
 	 </li>

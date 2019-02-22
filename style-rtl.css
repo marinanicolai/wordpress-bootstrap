@@ -3823,6 +3823,7 @@ section.footer-portofolio div {
 .submit article.form div.form-group input {
   border: none;
   background-color: inherit;
+  padding-right: 1rem;
 }
 
 .submit article.form div.form-group textarea {
@@ -3860,7 +3861,18 @@ section.footer-portofolio div {
   font-size: 0.7rem;
 }
 
-.reach_us ul.contact li i {
+.reach_us ul.contact li span.layer {
+  width: 51px;
+  align-content: center;
+  text-align: center;
+  display: inline-block;
+  height: 100%;
+  background-color: #eaeaea;
+}
+
+.reach_us ul.contact li span.layer i {
+  position: relative;
+  top: calc(50% - 10px);
   padding-bottom: 2rem;
 }
 
