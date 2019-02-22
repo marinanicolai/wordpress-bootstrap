@@ -46,6 +46,7 @@ get_header();
 		<section class="know_about_us jumbotron text-center">
 			<div class="container">
 				<h1 class="name jumbotron-heading">Know About Us</h1>
+				<div class="info">
 				<div class="text">
 					<h3> Flexible & Customizable</h3>
 					<p>It is a long established fact that a reader will be distracted by the 
@@ -61,10 +62,11 @@ get_header();
 						</p>
 			</div>
 			<div class="picture">
-				<img href="#">
-</div>
-			</div>
-		</section>
+				<img src="<?php bloginfo('template_url'); ?>/images/team.png">
+		</div>
+   </div>
+	</div>
+</section>
 
 <section class="working_process jumbotron text-center">
 			<div class="container">
@@ -73,47 +75,50 @@ get_header();
 						Neque porro quisquam est, qui dolorem ipsum quia dolor 
 						sit amet.Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.  							
 				</p>
-</div>
- <div class="timeline">
-      <div class="events">
-        <ul class="progressbar">
-  <li class="active">Designer at Google</li>
-  <li class="active">Freelance Developer</li>
-  <li>Microsoft ???</li>
-</ul>
-      </div>
-    </div>
-    <div> 
-
-    <div class="slider">
-			<h1> thi is the slider </h1>
-</div>
-			<div class=" container stories">
-
-<div class="row story">
- <div class="col-sm">
+			</div>
+			
+ <div class="work_prog">
+	  <ul class="timeline">
+      <li>
+				<h3>Plan</h3>
+			</li>
+      <li>
+				<h3>Design</h3>
+			</li>
+      <li>
+				<h3>Develop</h3>
+			</li>
+			<li>
+				<h3>Testing</h3>
+			</li>
+			<li>
+				<h3>Launch</h3>
+			</li>
+    </ul>
+  </div>
+    
+<div class=" container stories">
+  <div class="row story">
+    <div class="col-sm">
             first It is a long established fact that a reader will be distracted by the 
 						readable content of a page when looking at its layout. The point of 
 						using Lorem Ipsum is that it has a more-or-less normal distribution 
 						of letters, as opposed to using 'Content here,
-</div>
-<div class="col-sm">
-second It is a long established fact that a reader will be distracted by the 
+    </div>
+    <div class="col-sm">
+            second It is a long established fact that a reader will be distracted by the 
 						readable content of a page when looking at its layout. The point of 
 						using Lorem Ipsum is that it has a more-or-less normal distribution 
 						of letters, as opposed to using 'Content here,
-</div>
-<div class="col-sm">
-third It is a long established fact that a reader will be distracted by the 
+    </div>
+    <div class="col-sm">
+            third It is a long established fact that a reader will be distracted by the 
 						readable content of a page when looking at its layout. The point of 
 						using Lorem Ipsum is that it has a more-or-less normal distribution 
 						of letters, as opposed to using 'Content here,
+    </div>
+ </div>
 </div>
-</div>
-
-
-</div>
-
 </section>
 
 <section class="testimonials jumbotron text-center">
@@ -270,13 +275,11 @@ third It is a long established fact that a reader will be distracted by the
 		 <h4><span> Phone:  </span>
 		  +880 111-111-111 </h4>
 		  </li>
-
 			<li>
 		 <i class="far fa-envelope"></i>
 		 <h4><span> Email: </span>
 		 ForCorporate@ForestThmes.com  </h4>
 		  </li>
-
 			<li>
 		 <i class="far fa-clock"></i>
 		 <h4><span>Monday - Friday :  </span>
@@ -285,9 +288,6 @@ third It is a long established fact that a reader will be distracted by the
 		 <h4><span>Saturday - Sunday : </span>
 		  closed</h4>
 		  </li>
-
-
-
    </ul>
  </li>
 
