@@ -261,9 +261,12 @@ third It is a long established fact that a reader will be distracted by the
 						<a href="#" class="btn btn-primary my-2">Send us</a>
 		</p>
  </li>
-
-
 </ul>
+</section>
 
+<section class="footer-services">
+<div>
+	<p>Copyright entity &copy; 2015, All Rights Reserved</p>
+</div>	
 </section>
 

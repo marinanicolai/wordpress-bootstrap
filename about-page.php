@@ -222,10 +222,13 @@ get_header();
 						<a href="#" class="btn btn-primary my-2">Send us</a>
 		</p>
  </li>
-
-
 </ul>
+</section>
 
+<section class="footer-about">
+<div>
+	<p>Copyright entity &copy; 2015, All Rights Reserved</p>
+</div>	
 </section>
 
 

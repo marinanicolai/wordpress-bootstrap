@@ -3009,6 +3009,7 @@ section.contact {
   background-color: black;
   clip-path: polygon(0 30%, 100% 0%, 100% 100%, 0% 100%);
   color: #fbfbfb;
+  margin: 0;
 }
 
 section.contact ul.col {
@@ -3095,6 +3096,17 @@ section.contact ul.col li.write_us p.buttons a.btn {
   margin: 1em;
   height: 45px;
   width: 152px;
+}
+
+section.footer-front {
+  background: #2e2e2e;
+  color: #ffffff;
+  height: 5rem;
+}
+
+section.footer-front div {
+  text-align: center;
+  padding-top: 2rem;
 }
 
 section.know_about {
@@ -3215,6 +3227,7 @@ section.us_contact {
   background-color: black;
   clip-path: polygon(0 30%, 100% 0%, 100% 100%, 0% 100%);
   color: #fbfbfb;
+  margin: 0;
 }
 
 section.us_contact ul.col {
@@ -3301,6 +3314,17 @@ section.us_contact ul.col li.write_us p.buttons a.btn {
   margin: 1em;
   height: 45px;
   width: 152px;
+}
+
+section.footer-about {
+  background: #2e2e2e;
+  color: #ffffff;
+  height: 5rem;
+}
+
+section.footer-about div {
+  text-align: center;
+  padding-top: 2rem;
 }
 
 section.our_services {
@@ -3509,6 +3533,7 @@ section.get_in_touch {
   background-color: black;
   clip-path: polygon(0 30%, 100% 0%, 100% 100%, 0% 100%);
   color: #fbfbfb;
+  margin: 0;
 }
 
 section.get_in_touch ul.col {
@@ -3595,6 +3620,17 @@ section.get_in_touch ul.col li.write_us p.buttons a.btn {
   margin: 1em;
   height: 45px;
   width: 152px;
+}
+
+section.footer-services {
+  background: #2e2e2e;
+  color: #ffffff;
+  height: 5rem;
+}
+
+section.footer-services div {
+  text-align: center;
+  padding-top: 2rem;
 }
 
 .know {
@@ -3736,6 +3772,17 @@ section.contact ul.col li.write_us p.buttons a.btn {
   width: 152px;
 }
 
+section.footer-portofolio {
+  background: #2e2e2e;
+  color: #ffffff;
+  height: 5rem;
+}
+
+section.footer-portofolio div {
+  text-align: center;
+  padding-top: 2rem;
+}
+
 .get_touch {
   clip-path: polygon(0 0, 100% 0, 100% 77%, 0% 100%);
   background-color: #fbfbfb;
@@ -3750,10 +3797,49 @@ section.contact ul.col li.write_us p.buttons a.btn {
   width: 50vw;
 }
 
+.submit article.form div.form-group {
+  justify-content: flex-start;
+  align-items: center;
+  width: 470px;
+  height: 56px;
+  background-color: #faf9f9;
+  display: flex;
+}
+
+.submit article.form div.form-group span.layer {
+  width: 51px;
+  align-content: center;
+  text-align: center;
+  display: inline-block;
+  height: 100%;
+  background-color: #eaeaea;
+}
+
+.submit article.form div.form-group span.layer i {
+  position: relative;
+  top: calc(50% - 10px);
+}
+
+.submit article.form div.form-group input {
+  border: none;
+  background-color: inherit;
+  padding-left: 1rem;
+}
+
+.submit article.form div.form-group textarea {
+  border: none;
+  background-color: inherit;
+  display: none;
+}
+
+.submit article.form div.textarea {
+  height: 275px;
+}
+
 .map {
   height: 60vh;
   background-color: #484848;
-  margin-top: 2rem;
+  padding-top: 2rem;
 }
 
 .reach_us {
@@ -3769,12 +3855,21 @@ section.contact ul.col li.write_us p.buttons a.btn {
 .reach_us ul.contact li {
   width: 20vw;
   padding: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 0.7rem;
+}
+
+.reach_us ul.contact li i {
+  padding-bottom: 2rem;
 }
 
 section.reach_to_us {
   background-color: black;
   clip-path: polygon(0 30%, 100% 0%, 100% 100%, 0% 100%);
   color: #fbfbfb;
+  margin: 0;
 }
 
 section.reach_to_us ul.col {
@@ -3861,6 +3956,17 @@ section.reach_to_us ul.col li.write_us p.buttons a.btn {
   margin: 1em;
   height: 45px;
   width: 152px;
+}
+
+section.footer {
+  background: #2e2e2e;
+  color: #ffffff;
+  height: 5rem;
+}
+
+section.footer div {
+  text-align: center;
+  padding-top: 2rem;
 }
 
 /* Bootstrap */

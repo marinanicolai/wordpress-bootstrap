@@ -327,6 +327,11 @@ third It is a long established fact that a reader will be distracted by the
 
 </section>
 
+<section class="footer-front">
+<div>
+	<p>Copyright entity &copy; 2015, All Rights Reserved</p>
+</div>	
+</section>
 
 
 		</main><!-- .site-main -->

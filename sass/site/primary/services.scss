@@ -190,6 +190,7 @@ section.get_in_touch {
 	background-color: color(second-dark);
 	clip-path: polygon(0 30%, 100% 0%, 100% 100%, 0% 100%);
 	color: color(second-lighter);
+	margin: 0;
 	ul.col {
 		padding-top: 4em;
 		list-style-type: none;
@@ -263,5 +264,15 @@ section.get_in_touch {
 				}
 			}
 		}
+	}
+}
+
+section.footer-services {
+	background: #2e2e2e;
+	color: #ffffff;
+	height: 5rem;
+	div {
+		text-align: center;
+		padding-top: 2rem;
 	}
 }

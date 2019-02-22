@@ -24,33 +24,33 @@ get_header();
 <section class="get_touch jumbotron text-center">
 		<div class="container">
         <h1 class="name jumbotron-heading">Know about us</h1>
-        Home >> Portfolio
+        Home >> contact
 				<p> We strive to give the best service to our clients</p>					
     </div>
 </section>
 <section class="submit">
 
 <article class="first">
-<img scr="#">
+<img src="<?php bloginfo('template_url'); ?>/images/contact-us.png">
 </article>
 <article class="form">
 <form id="myForm" action="foo.htm" method="post"> 
 <div class="form-group">
-	<i class="fas fa-band-aid"></i>
+	<span class="layer"><i class="fas fa-users"></i></span>
   <input type="text" name="firstName" id="first-name" placeholder="Name(Required)"/>
 </div>
 
 <div class="form-group">
- <i class="fas fa-band-aid"></i>
+ <span class="layer"><i class="fas fa-envelope"></i></span>
  <input type="email" name="email" id="email" placeholder="Email(Required)"/>
 </div>
 
 <div class="form-group">
- <i class="fas fa-band-aid"></i>
+	<span class="layer"><i class="far fa-keyboard"></i></span>
  <input type="text" name="subject" id="subject" placeholder="Subject(Optional)"/>
 </div>
 
-<div class="form-group">
+<div class="form-group textarea">
 <textarea name="message" rows="10" cols="30">
 Enter the text 
 </textarea>
@@ -68,24 +68,24 @@ Enter the text
 <section class="reach_us">
  <ul class="contact">
 	 <li> 
-		 <i class="fas fa-band-aid"></i>
-		 <p>Star Street, Park Avenue
-        253/ 254  Jupiter East , JP 6985 </p>
+		 <span class="layer"><i class="fas fa-map-marker-alt"></i></span>
+		 <p>Star Street, Park Avenue</p>
+      <p>253/ 254  Jupiter East , JP 6985 </p>
 	 </li>
 	 <li> 
-		 <i class="fas fa-band-aid"></i>
-		 <p>Star Street, Park Avenue
-        253/ 254  Jupiter East , JP 6985 </p>
+		 <span class="layer"><i class="fas fa-phone"></i></span>
+		 <p>+321 456 789 010</p>
+     <p>+321 88956 23658 </p>
 	 </li>
 	 <li> 
-		 <i class="fas fa-band-aid"></i>
-		 <p>Star Street, Park Avenue
-        253/ 254  Jupiter East , JP 6985 </p>
+		 <span class="layer"><i class="far fa-envelope"></i><span>
+		 <p>ForCorporate@ForestThemes.com</p>		
+      <p>ForestThemes@yahoo.com </p>
 	 </li>
 	 <li> 
-		 <i class="fas fa-band-aid"></i>
-		 <p>Star Street, Park Avenue
-        253/ 254  Jupiter East , JP 6985 </p>
+		 <span class="layer"><i class="fas fa-pen"></i></span>
+		 <p>facebook.com/ForCorporate.ForestThemes</p>
+      <p>Twitter.com/ForCorporate.ForestThemes </p>
 	 </li>
 </ul> 
 </section>
@@ -153,4 +153,10 @@ Enter the text
    </p>
  </li>
 </ul>
+</section>
+
+<section class="footer">
+<div>
+	<p>Copyright entity &copy; 2015, All Rights Reserved</p>
+</div>	
 </section>

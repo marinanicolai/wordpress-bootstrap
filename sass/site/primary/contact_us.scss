@@ -21,12 +21,47 @@ $colors: (
 	article.first {
 		width: 50vw;
 	}
+	article.form {
+		div.form-group {
+			justify-content: flex-start;
+			align-items: center;
+			width: 470px;
+			height: 56px;
+			background-color: #faf9f9;
+			display: flex;
+			span.layer {
+				width: 51px;
+				align-content: center;
+				text-align: center;
+				display: inline-block;
+				height: 100%;
+				background-color: #eaeaea;
+				i {
+					position: relative;
+					top: calc(50% - 10px);
+				}
+			}
+			input {
+				border: none;
+				background-color: inherit;
+				padding-left: 1rem;
+			}
+			textarea {
+				border: none;
+				background-color: inherit;
+				display: none;
+			}
+		}
+		div.textarea {
+			height: 275px;
+		}
+	}
 }
 
 .map {
 	height: 60vh;
 	background-color: color(second);
-	margin-top: 2rem;
+	padding-top: 2rem;
 }
 .reach_us {
 	margin: auto;
@@ -37,6 +72,13 @@ $colors: (
 		li {
 			width: 20vw;
 			padding: 2rem;
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+			font-size: 0.7rem;
+			i {
+				padding-bottom: 2rem;
+			}
 		}
 	}
 }
@@ -45,6 +87,7 @@ section.reach_to_us {
 	background-color: color(second-dark);
 	clip-path: polygon(0 30%, 100% 0%, 100% 100%, 0% 100%);
 	color: color(second-lighter);
+	margin: 0;
 	ul.col {
 		padding-top: 4em;
 		list-style-type: none;
@@ -118,5 +161,15 @@ section.reach_to_us {
 				}
 			}
 		}
+	}
+}
+
+section.footer {
+	background: #2e2e2e;
+	color: #ffffff;
+	height: 5rem;
+	div {
+		text-align: center;
+		padding-top: 2rem;
 	}
 }

@@ -123,5 +123,11 @@ get_header();
 </ul>
 </section>
 
+<section class="footer-portofolio">
+<div>
+	<p>Copyright entity &copy; 2015, All Rights Reserved</p>
+</div>	
+</section>
+
 
 
