@@ -1,0 +1,401 @@
+$colors: (
+	main: #ffffff,
+	second: #484848,
+	/*this color is #60606 */ second-light: lighten(#484848, 30%),
+	/*this color is #faf9f9 */ second-lighter: lighten(#484848, 70%),
+	/*this color is #343434*/ second-dark: darken(#484848, 30%),
+	button: #1ba1e2
+);
+@function color($color-name) {
+	@return map-get($colors, $color-name);
+}
+
+section.corp_design {
+	height: 57em;
+	background-color: color(second);
+	clip-path: polygon(0 0, 100% 0, 100% 78%, 0% 100%);
+
+	.container {
+		padding-top: 11em;
+	}
+
+	h1.name,
+	p.lead,
+	a {
+		color: color(main);
+	}
+
+	h1 {
+		text-transform: uppercase;
+		font-size: 4.5em;
+	}
+	p.lead {
+		padding: 1.5em;
+	}
+}
+
+section.clean_unique_design {
+	background-color: color(main);
+	.container {
+		padding: 0 9em;
+	}
+	p.buttons {
+		display: flex;
+		justify-content: center;
+	}
+
+	a.btn {
+		margin: 1em;
+		height: 45px;
+		width: 152px;
+	}
+	.btn:hover {
+		cursor: pointer;
+	}
+	.btn-default {
+		border: 1px solid color(button);
+		background-color: color(main);
+	}
+	.btn-primary {
+		border: 1px solid color(button);
+		background-color: color(button);
+		color: color(main);
+	}
+	span {
+		color: color(button);
+		padding: 1.5em 0;
+	}
+}
+
+section.know_about_us {
+	background-color: color(second-lighter);
+	height: 35em;
+	transform: skewY(-4deg);
+	h1,
+	h3,
+	p {
+		transform: skewY(4deg);
+	}
+	h1.name {
+		text-decoration: underline color(button);
+	}
+	.info {
+		display: flex;
+		.text {
+			float: left;
+			width: 50%;
+			h3,
+			p {
+				text-align: left;
+			}
+			p {
+				padding-top: 2em;
+			}
+			p.button {
+				a.btn {
+					border: 1px solid color(button);
+					background-color: color(button);
+					color: color(main);
+					margin: 1em;
+					height: 45px;
+					width: 152px;
+				}
+				.picture {
+					width: 50%;
+				}
+			}
+		}
+	}
+}
+
+.working_process {
+	background-color: color(main);
+
+	h1.name {
+		text-decoration: underline color(button);
+	}
+	p {
+		margin: 1em 11em;
+	}
+	.timeline {
+		border-bottom: 1px solid grey;
+		/*Create Line*/
+		li {
+			margin: auto 0;
+			list-style: none;
+			position: relative;
+			height: 6px;
+			background: #faf9f9;
+			/*Dots*/
+			&:after {
+				content: "";
+				display: block;
+				left: 50%;
+				bottom: 0;
+				width: 25px;
+				height: 25px;
+				background: red;
+				transform: translateX(50%);
+				border-radius: 50%;
+			}
+		}
+	}
+	.work_prog {
+		ul {
+			padding: 50px 0;
+			display: flex;
+			justify-content: space-around;
+		}
+	}
+
+	.row.story {
+		padding-top: 4em;
+		.col-sm {
+			text-align: left;
+		}
+	}
+}
+
+section.testimonials {
+	background-color: color(second-lighter);
+	transform: skewY(-4deg);
+	height: 35em;
+	.container {
+		transform: skewY(4deg);
+		h1.name {
+			text-decoration: underline color(button);
+		}
+		p.intro {
+			margin: 1em 11em;
+			padding-top: 1em;
+		}
+	}
+
+	ul {
+		transform: skewY(4deg);
+		list-style-type: none;
+		div.img {
+			height: 111px;
+			width: 111px;
+			border-radius: 50%;
+			margin-left: 9em;
+			background-color: color(second);
+		}
+		li {
+			h3.name {
+				padding-top: 1.5em;
+			}
+			span.job {
+				color: color(button);
+			}
+			p {
+				padding: 0 1.5em;
+			}
+		}
+
+		li.left {
+			float: left;
+			width: 33%;
+		}
+		li.right {
+			float: right;
+			width: 33%;
+		}
+	}
+}
+
+section.our_portofolio {
+	background-color: color(main);
+	h1.name {
+		text-decoration: underline color(button);
+	}
+	p.intro {
+		margin: 1em 11em;
+		padding-top: 1em;
+	}
+	.row {
+		display: flex;
+		justify-content: center;
+		padding-top: 4.5em;
+	}
+	div.left {
+		float: left;
+	}
+	div.right {
+		float: right;
+	}
+	ul {
+		list-style-type: none;
+	}
+	li {
+		width: 356px;
+		background-color: color(second);
+		margin-bottom: 15px;
+	}
+	li.small {
+		height: 243px;
+	}
+	li.medium {
+		height: 319px;
+	}
+	li.large {
+		height: 473px;
+	}
+}
+
+section.purchase {
+	background-color: color(second-lighter);
+	transform: skewY(-4deg);
+	.container {
+		display: flex;
+		justify-content: center;
+		padding-top: 2.7em;
+	}
+	p {
+		transform: skewY(4deg);
+	}
+	p.left {
+		float: left;
+	}
+	p.buttons.right {
+		float: right;
+		padding-left: 2em;
+	}
+}
+
+section.our_team {
+	background-color: color(main);
+	h1.name {
+		text-decoration: underline color(button);
+	}
+	p {
+		margin: 1em 11em;
+		padding-top: 1em;
+	}
+
+	ul.team {
+		list-style-type: none;
+		display: flex;
+		justify-content: space-around;
+		padding-top: 5em;
+		li {
+			padding-right: 2em;
+			li:last-child {
+				padding-right: 0;
+			}
+			img.profile {
+				width: 272px;
+				height: 272px;
+				background-color: color(second);
+			}
+			h3 {
+				padding: 1em 0 0.5em 0;
+			}
+			h4 {
+				padding-bottom: 1em;
+				color: color(button);
+			}
+			i {
+				font-size: 2em;
+			}
+		}
+
+		ul.social {
+			padding: 0;
+			list-style-type: none;
+			display: flex;
+			justify-content: center;
+		}
+	}
+}
+
+section.contact {
+	background-color: color(second-dark);
+	clip-path: polygon(0 30%, 100% 0%, 100% 100%, 0% 100%);
+	color: color(second-lighter);
+	margin: 0;
+	ul.col {
+		padding-top: 4em;
+		list-style-type: none;
+		display: flex;
+		justify-content: space-around;
+		li {
+			width: 33%;
+			li:last-child {
+				padding-left: 0.95em;
+			}
+		}
+		h3,
+		h4,
+		span {
+			text-transform: capitalize;
+			padding-left: 1.5em;
+		}
+		h4 {
+			font-size: 1em;
+			padding-bottom: 1em;
+		}
+		ul.contact_us {
+			li {
+				display: flex;
+				width: auto;
+				h3 {
+					font-size: 1em;
+					padding-bottom: 2em;
+				}
+			}
+		}
+		ul.lates_twe {
+			list-style-type: none;
+			li {
+				padding: 0;
+				width: auto;
+				display: flex;
+				i {
+					padding-right: 0.5em;
+				}
+			}
+		}
+		li.write_us {
+			input {
+				position: relative;
+			}
+			input#profile {
+				margin: 0em 2em 0.5em 0.5em;
+				background-image: url(img/user-alt-solid.svg);
+			}
+			input#pen {
+				margin-left: 0.5em;
+				width: 24.5em;
+				height: 8em;
+				::placeholder {
+					position: absolute;
+					top: 0;
+					right: 0;
+				}
+			}
+			p.buttons {
+				float: left;
+				padding-left: 0;
+				a.btn {
+					border: 1px solid color(button);
+					background-color: color(button);
+					color: color(main);
+					margin: 1em;
+					height: 45px;
+					width: 152px;
+				}
+			}
+		}
+	}
+}
+
+section.footer-front {
+	background: #2e2e2e;
+	color: #ffffff;
+	height: 5rem;
+	div {
+		text-align: center;
+		padding-top: 2rem;
+	}
+}
