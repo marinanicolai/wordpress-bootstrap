@@ -22,9 +22,7 @@ get_header();
 		<main id="main" class="site-about">
 <section class="our_services jumbotron text-center">
 		<div class="container">
-        <h1 class="name jumbotron-heading">Know about us</h1>
-        Home >> Services
-				<p> We strive to give the best service to our clients</p>					
+		 <?php the_field('intro'); ?>        					
     </div>
 </section>
 
@@ -88,12 +86,8 @@ get_header();
      
      <section class="testimonials jumbotron text-center">
 			<div class="container">
-				<h1 class="name jumbotron-heading">Testimonials</h1>
-					<p class="intro">
-						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
-						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet. 							
-				</p>
-</div>
+			  <?php the_field('testimonials'); ?>
+			</div>
 <ul>
   <li class="left">
 	   <div class="img"></div>
@@ -125,15 +119,11 @@ get_header();
 
 <section class="process_of_working jumbotron text-center">
 			<div class="container">
-				<h1 class="name jumbotron-heading">Working Process</h1>
-					<p>
-						Neque porro quisquam est, qui dolorem ipsum quia dolor 
-						sit amet.Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.  							
-				</p>
-</div>
+			  <?php the_field('working'); ?>
+			</div>
  <div class="timeline">
       <div class="events">
-        <ul class="progressbar">
+        <ul class="testimonials">
   <li class="active">Designer at Google</li>
   <li class="active">Freelance Developer</li>
   <li>Microsoft ???</li>
@@ -174,9 +164,9 @@ third It is a long established fact that a reader will be distracted by the
 </section>
 
 <section class="buy jumbotron text-center">
-			<div class="container">				
+			<div class="container">		
 				<p class="left">
-						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet. 							
+				<?php the_field('descr_buy'); ?>
 				</p>
 				<p class="buttons right">
 						<a href="#" class="btn btn-primary my-2">Purchase now</a>
@@ -186,12 +176,7 @@ third It is a long established fact that a reader will be distracted by the
 
 <section class="clients jumbotron text-center">
 			<div class="container">
-				<h1 class=" jumbotron-heading">Our clients</h1>
-					<p>
-						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
-						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
-						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet. 							
-				</p>
+				<?php the_field('our_clients'); ?>
 </div>
 </section>
 
@@ -202,32 +187,23 @@ third It is a long established fact that a reader will be distracted by the
 	 <ul class="contact_us">
      <li>
 		 <i class="fas fa-map-marker-alt"></i>
-		 <h4><span> address: </span>
-		  326585 Salemba Raya, Jakata </h4>
+		  <?php the_field('write_us'); ?>         
 			</li>
 			<li>
 		 <i class="fas fa-phone"></i>
-		 <h4><span> Phone:  </span>
-		  +880 111-111-111 </h4>
+		 <?php the_field('call_us'); ?>
 		  </li>
-
 			<li>
 		 <i class="far fa-envelope"></i>
-		 <h4><span> Email: </span>
-		 ForCorporate@ForestThmes.com  </h4>
-		  </li>
-
+		 <?php the_field('email_us'); ?>
+		 </li>
 			<li>
 		 <i class="far fa-clock"></i>
-		 <h4><span>Monday - Friday :  </span>
-			10.00 am to 18.00 pm</h4></li>
-			<li>			
-		 <h4><span>Saturday - Sunday : </span>
-		  closed</h4>
-		  </li>
-
-
-
+		 <?php the_field('our_schedule_bus'); ?>
+		 </li>
+			<li>
+			<?php the_field('our_schedule_weekend'); ?>			
+		   </li>
    </ul>
  </li>
 
@@ -237,17 +213,14 @@ third It is a long established fact that a reader will be distracted by the
 			<li>
 				<p>
 				   <i class="fab fa-twitter"></i>
-			Tweet It is a long established fact that
-		  a reader will be distracted by the 
-			readable content of a page when</p>
-			</li>
-			
+					 <?php the_field('first_tweet'); ?>
+			  </p>
+			</li>			
 			<li>
 				<p> 
 				<i class="fab fa-twitter"></i>
-			Tweet It is a long established fact that
-		  a reader will be distracted by the 
-			readable content of a page when</p>
+				<?php the_field('second_tweet'); ?>
+			</p>
       </li>
 			</ul>
  </li>

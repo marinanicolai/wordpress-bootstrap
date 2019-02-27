@@ -1,0 +1,31 @@
+/*Media queries for Ipad*/
+@media screen and (max-width: 1024px) {
+}
+
+/*Media queries for phones*/
+@media screen and (max-width: 360px) {
+	section.corp_design,
+	section.clean_unique_design {
+		width: 360px;
+		height: 660px;
+		font-size: 12px;
+	}
+	section.clean_unique_design {
+		height: 460px;
+		h1 {
+			font-size: 1.5rem;
+		}
+		a {
+			font-size: 1em;
+		}
+	}
+	section.know_about_us {
+		height: 37em;
+		.text {
+			width: 325px;
+		}
+		.picture {
+			display: none;
+		}
+	}
+}

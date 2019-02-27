@@ -2706,21 +2706,25 @@ section.know_about_us h1.name {
   text-decoration: underline #1ba1e2;
 }
 
-section.know_about_us .text {
+section.know_about_us .info {
+  display: flex;
+}
+
+section.know_about_us .info .text {
   float: right;
   width: 50%;
 }
 
-section.know_about_us .text h3,
-section.know_about_us .text p {
+section.know_about_us .info .text h3,
+section.know_about_us .info .text p {
   text-align: right;
 }
 
-section.know_about_us .text p {
+section.know_about_us .info .text p {
   padding-top: 2em;
 }
 
-section.know_about_us .text p.button a.btn {
+section.know_about_us .info .text p.button a.btn {
   border: 1px solid #1ba1e2;
   background-color: #1ba1e2;
   color: #ffffff;
@@ -2729,55 +2733,65 @@ section.know_about_us .text p.button a.btn {
   width: 152px;
 }
 
-section.know_about_us .text p.button .picture {
+section.know_about_us .info .text p.button .picture {
   width: 50%;
 }
 
-section.working_process {
+.working_process {
   background-color: #ffffff;
 }
 
-section.working_process h1.name {
+.working_process h1.name {
   text-decoration: underline #1ba1e2;
 }
 
-section.working_process p {
+.working_process p {
   margin: 1em 11em;
 }
 
-section.working_process .work_prog ul {
-  padding: 50px 0;
-  display: flex;
-  justify-content: space-around;
+.working_process .timeline {
+  border-bottom: 1px solid grey;
   /*Create Line*/
-  /*Dots*/
 }
 
-section.working_process .work_prog ul li {
+.working_process .timeline li {
   margin: auto 0;
   list-style: none;
   position: relative;
   height: 6px;
   background: #faf9f9;
+  /*Dots*/
 }
 
-section.working_process .work_prog ul li:after {
+.working_process .timeline li:after {
   content: "";
+  display: block;
   right: 50%;
   bottom: 0;
   width: 25px;
   height: 25px;
-  background: inherit;
-  transform: translateX(50%);
+  background: red;
+  transform: translateX(-50%);
   border-radius: 50%;
 }
 
-section.working_process .row.story {
+.working_process .work_prog ul {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.working_process .row.story {
   padding-top: 4em;
 }
 
-section.working_process .row.story .col-sm {
-  text-align: right;
+.working_process .row.story ul {
+  list-style: none;
+  display: flex;
+}
+
+.working_process .row.story ul li {
+  width: calc(30%);
 }
 
 section.testimonials {
@@ -2929,6 +2943,7 @@ section.our_team ul.team {
 
 section.our_team ul.team li {
   padding-left: 2em;
+  width: 25%;
 }
 
 section.our_team ul.team li li:last-child {
@@ -3936,6 +3951,35 @@ section.footer {
 section.footer div {
   text-align: center;
   padding-top: 2rem;
+}
+
+/*Media queries for Ipad*/
+/*Media queries for phones*/
+@media screen and (max-width: 360px) {
+  section.corp_design,
+  section.clean_unique_design {
+    width: 360px;
+    height: 660px;
+    font-size: 12px;
+  }
+  section.clean_unique_design {
+    height: 460px;
+  }
+  section.clean_unique_design h1 {
+    font-size: 1.5rem;
+  }
+  section.clean_unique_design a {
+    font-size: 1em;
+  }
+  section.know_about_us {
+    height: 37em;
+  }
+  section.know_about_us .text {
+    width: 325px;
+  }
+  section.know_about_us .picture {
+    display: none;
+  }
 }
 
 /* Bootstrap */

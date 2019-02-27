@@ -21,9 +21,7 @@ get_header();
 		<main id="main" class="site-about">
 <section class="know_about jumbotron text-center">
 		<div class="container">
-        <h1 class="name jumbotron-heading">Know about us</h1>
-        Home >> About us
-				<p> Nor again is there anyone who loves or pursues or desires.</p>					
+		    <?php the_field('introduction'); ?>        				
     </div>
 </section>
 
@@ -31,13 +29,7 @@ get_header();
 			<div class="container">
 				<h1 class="our_smiling_team jumbotron-heading">About Spike</h1>
 				<div class="text">
-					<h3> Our smilling team</h3>
-					<h4>ForCorporate awesome multifunctional Teapmte</h4>
-					<p>Voluptatem sequi nesciunt. Neque porro quisquam est, qui dolore.
-            Voluptatem sequi nesciunt. Neque porro quisquam est, qui dolore.
-            Voluptatem sequi nesciunt. Neque porro quisquam est, qui dolore.
-            Voluptatem sequi nesciunt. Neque porro quisquam est, qui dolore.
-          </p>
+					<?php the_field('about_spike'); ?>
 				  <p class="button">
             <a href="#" class="btn btn-primary my-2">Get Template</a>
             <a href="#" class="btn btn-primary my-2">Read more</a>
@@ -79,13 +71,8 @@ get_header();
 </section>
 <section class="team_sec jumbotron text-center">
 			<div class="container">
-				<h1 class="name jumbotron-heading">Our team</h1>
-					<p>
-						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
-						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
-						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet. 							
-				</p>
-</div>
+			<?php the_field('our_team'); ?>
+		 </div>
 <ul class="team">
   <li>
 	  <img class="profile" src="#">
@@ -136,24 +123,14 @@ get_header();
 
 <section class="our_skills jumbotron text-center">
 			<div class="container">
-				<h1 class="name jumbotron-heading">Our skills</h1>
-					<p>
-						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
-						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
-						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet. 							
-				</p>
-</div>
+      <?php the_field('our_skills'); ?>
+      </div>				
 </section>
 
 <section class="our_clients jumbotron text-center">
 			<div class="container">
-				<h1 class=" jumbotron-heading">Our clients</h1>
-					<p>
-						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
-						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
-						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet. 							
-				</p>
-</div>
+			<?php the_field('our_clients'); ?>
+			</div>
 </section>
 
 <section class="us_contact jumbotron text-center">
@@ -163,28 +140,22 @@ get_header();
 	 <ul class="contact_us">
      <li>
 		 <i class="fas fa-map-marker-alt"></i>
-		 <h4><span> address: </span>
-		  326585 Salemba Raya, Jakata </h4>
+		 <?php the_field('write_us'); ?>
 			</li>
 			<li>
-		 <i class="fas fa-phone"></i>
-		 <h4><span> Phone:  </span>
-		  +880 111-111-111 </h4>
+			<i class="fas fa-phone"></i>
+			<?php the_field('call_us'); ?>
 		  </li>
-
 			<li>
-		 <i class="far fa-envelope"></i>
-		 <h4><span> Email: </span>
-		 ForCorporate@ForestThmes.com  </h4>
-		  </li>
-
+			<i class="far fa-envelope"></i>
+			<?php the_field('email_us'); ?>
+			  </li>
 			<li>
 		 <i class="far fa-clock"></i>
-		 <h4><span>Monday - Friday :  </span>
-			10.00 am to 18.00 pm</h4></li>
-			<li>			
-		 <h4><span>Saturday - Sunday : </span>
-		  closed</h4>
+		 <?php the_field('our_schedule_bus'); ?>
+		 </li>
+			<li>
+			<?php the_field('our_schedule_weekend'); ?>			
 		  </li>
 
 
@@ -198,17 +169,15 @@ get_header();
 			<li>
 				<p>
 				   <i class="fab fa-twitter"></i>
-			Tweet It is a long established fact that
-		  a reader will be distracted by the 
-			readable content of a page when</p>
+					 <?php the_field('first_tweet'); ?>
+				</p>
 			</li>
 			
 			<li>
 				<p> 
-				<i class="fab fa-twitter"></i>
-			Tweet It is a long established fact that
-		  a reader will be distracted by the 
-			readable content of a page when</p>
+				   <i class="fab fa-twitter"></i>
+				   <?php the_field('second_tweet'); ?>
+				</p>
       </li>
 			</ul>
  </li>

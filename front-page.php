@@ -21,9 +21,7 @@ get_header();
 		<main id="main" class="site-main">
 		<section class="corp_design jumbotron text-center">
 			<div class="container">
-				<h1 class="name jumbotron-heading">corporate <strong>design</strong></h1>
-				<p class="lead">Web sites still in their infancy. Various versions have evolved</p>
-				<p>
+			 <?php the_field('introduc'); ?>
 					<a href="#" class="btn btn-primary my-2">Buy now</a>					
 				</p>
 			</div>
@@ -31,10 +29,7 @@ get_header();
 
 		<section class="clean_unique_design jumbotron text-center">
 		<div class="container">
-				<h1 class="name jumbotron-heading">ForCorporate Clean and Unique Design</h1>
-				<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.Neque porro
-						 quisquam est, qui dolorem ipsum quia dolor sit amet.Neque porro
-						 quisquam est, qui dolorem ipsum quia dolor sit amet.</p>	
+		  <?php the_field('corp_design'); ?>
 				<p class="buttons">
 						<a href="#" class="btn btn-default ">Read more</a> 	
 						<span>or</span> 
@@ -48,15 +43,7 @@ get_header();
 				<h1 class="name jumbotron-heading">Know About Us</h1>
 				<div class="info">
 				<div class="text">
-					<h3> Flexible & Customizable</h3>
-					<p>It is a long established fact that a reader will be distracted by the 
-						readable content of a page when looking at its layout. The point of 
-						using Lorem Ipsum is that it has a more-or-less normal distribution 
-						of letters, as opposed to using 'Content here, content here', making
-						 it look like readable English. Many desktop publishing packages and
-							web page editors now use Lorem Ipsum as their default model text,
-							 and a search for 'lorem ipsum' will uncover many web sites still
-							  in their infancy.</p>
+				 <?php the_field('know_us'); ?>
 				  <p class="button">
 						<a href="#" class="btn btn-primary my-2">Buy this Theme</a>
 						</p>
@@ -71,10 +58,7 @@ get_header();
 <section class="working_process jumbotron text-center">
 			<div class="container">
 				<h1 class="name jumbotron-heading">Working Process</h1>
-					<p>
-						Neque porro quisquam est, qui dolorem ipsum quia dolor 
-						sit amet.Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.  							
-				</p>
+					<?php the_field('working'); ?>
 			</div>
 			
  <div class="work_prog">
@@ -99,36 +83,29 @@ get_header();
     
 <div class=" container stories">
   <div class="row story">
-    <div class="col-sm">
-            first It is a long established fact that a reader will be distracted by the 
-						readable content of a page when looking at its layout. The point of 
-						using Lorem Ipsum is that it has a more-or-less normal distribution 
-						of letters, as opposed to using 'Content here,
+  
+			<?php if(get_field('stories')): ?>
+	<ul>
+	<?php while(has_sub_field('stories')): ?>
+		<li><?php the_sub_field('story'); ?></li>
+	<?php endwhile; ?>
+	</ul>
+<?php endif; ?>
+			
     </div>
-    <div class="col-sm">
-            second It is a long established fact that a reader will be distracted by the 
-						readable content of a page when looking at its layout. The point of 
-						using Lorem Ipsum is that it has a more-or-less normal distribution 
-						of letters, as opposed to using 'Content here,
-    </div>
-    <div class="col-sm">
-            third It is a long established fact that a reader will be distracted by the 
-						readable content of a page when looking at its layout. The point of 
-						using Lorem Ipsum is that it has a more-or-less normal distribution 
-						of letters, as opposed to using 'Content here,
-    </div>
+    
+    
  </div>
 </div>
 </section>
 
 <section class="testimonials jumbotron text-center">
-			<div class="container">
-				<h1 class="name jumbotron-heading">Testimonials</h1>
-					<p class="intro">
-						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
-						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet. 							
-				</p>
-</div>
+	<div class="container">
+		<h1 class="name jumbotron-heading">Testimonials</h1>
+			<p class="intro">
+					<?php the_field('testimonials'); ?>
+			 </p>
+      </div>
 <ul>
   <li class="left">
 	   <div class="img"></div>
@@ -162,11 +139,8 @@ get_header();
 			<div class="container">
 				<h1 class="name jumbotron-heading">Our portofolio</h1>
 					<p class="intro">
-						Neque porro quisquam est, qui dolorem ipsum quia
-						dolor sit amet.Neque porro quisquam est, qui dolorem 
-						ipsum quia dolor sit amet.Neque porro quisquam est,
-						 qui dolorem ipsum quia dolor sit amet. 							
-				</p>
+					<?php the_field('portofolio'); ?>
+					</p>
 </div>
 <div class="row">
 	 <div class="column left">
@@ -195,7 +169,7 @@ get_header();
 <section class="purchase jumbotron text-center">
 			<div class="container">				
 				<p class="left">
-						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet. 							
+				  <?php the_field('purchase'); ?>
 				</p>
 				<p class="buttons right">
 						<a href="#" class="btn btn-primary my-2">Purchase now</a>
@@ -207,58 +181,41 @@ get_header();
 			<div class="container">
 				<h1 class="name jumbotron-heading">Our team</h1>
 					<p>
-						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
-						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
-						Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet. 							
-				</p>
+					  <?php the_field('our_team'); ?>
+					</p>
 </div>
+
+/*this is the repeter for each member*/
+<?php if(get_field('team_members')): ?>
 <ul class="team">
-  <li>
-	  <img class="profile" src="#">
-		<h3> Dyloney Woodarns </h3>
-		<h4 class="job">Web Designer </h4>
-		<ul class="social">		  
-      <li><i class="fab fa-facebook"></i></li>  
-			<li><i class="fab fa-twitter-square"></i> </li>
-			<li><i class="fab fa-google-plus-square"></i> </li>
-		</ul>
-	</li>
+		<?php while(has_sub_field('team_members')): ?>
+		<li>   
+      	<img class="profile" src="<?php the_field('team_member_image'); ?>" />
+	      <h3><?php the_sub_field('name'); ?> </h3>
+				<h4><?php the_sub_field('position'); ?> </h4>
+				<ul class="social">
+					<li>
+							<a href="<?php the_sub_field('facebook_url'); ?>">
+							<i class="fab fa-facebook"></i></a>
+					</li>
+					<li>
+							<a href="<?php the_sub_field('facebook_url'); ?>">
+							<i class="fab fa-facebook"></i></a>
+					</li>	
+					<li>
+							<a href="<?php the_sub_field('facebook_url'); ?>">
+							<i class="fab fa-facebook"></i></a>
+					</li>		
+				</ul>	
 
-	<li>
-	  <img class="profile" src="#">
-		<h3> Dyloney Woodarns </h3>
-		<h4 class="job">Web Designer </h4>
-		<ul class="social">
-		  <li><i class="fab fa-facebook"></i></li>
-			<li><i class="fab fa-twitter-square"></i> </li>
-			<li><i class="fab fa-google-plus-square"></i> </li>
-		</ul>
-	</li>
 
-	<li>
-	  <img class="profile" src="#">
-		<h3> Dyloney Woodarns </h3>
-		<h4 class="job">Web Designer </h4>
-		<ul class="social">
-		  <li><i class="fab fa-facebook"></i> </li>
-			<li><i class="fab fa-twitter-square"></i> </li>
-			<li><i class="fab fa-google-plus-square"></i> </li>
-		</ul>
-	</li>
+    </li>			
 
-	<li>
-	  <img class="profile" src="#">
-		<h3> Dyloney Woodarns </h3>
-		<h4 class="job">Web Designer </h4>
-		<ul class="social">
-		  <li><i class="fab fa-facebook"></i> </li>
-			<li><i class="fab fa-twitter-square"></i> </li>
-			<li><i class="fab fa-google-plus-square"></i> </li>
+			<?php endwhile; ?>
 		</ul>
-	</li>
+		<?php endif; ?>	
 
-</ul>
-</section>
+	</section>
 
 <section class="contact jumbotron text-center">
 <ul class="col">

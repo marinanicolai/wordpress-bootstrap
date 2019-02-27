@@ -150,8 +150,13 @@ section.know_about_us {
 
 	.row.story {
 		padding-top: 4em;
-		.col-sm {
-			text-align: left;
+		ul {
+			list-style: none;
+			display: flex;
+			li {
+				width: calc(30%);
+				padding-right: 1rem;
+			}
 		}
 	}
 }
@@ -280,6 +285,7 @@ section.our_team {
 		padding-top: 5em;
 		li {
 			padding-right: 2em;
+			width: 25%;
 			li:last-child {
 				padding-right: 0;
 			}

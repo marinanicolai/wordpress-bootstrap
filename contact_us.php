@@ -23,6 +23,7 @@ get_header();
 
 <section class="get_touch jumbotron text-center">
 		<div class="container">
+		  
         <h1 class="name jumbotron-heading">Know about us</h1>
         Home >> contact
 				<p> We strive to give the best service to our clients</p>					
