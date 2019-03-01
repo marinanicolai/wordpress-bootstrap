@@ -23,14 +23,13 @@ get_header();
 
 <section class="get_touch jumbotron text-center">
 		<div class="container">
-		  
-        <h1 class="name jumbotron-heading">Know about us</h1>
-        Home >> contact
-				<p> We strive to give the best service to our clients</p>					
+		   <h1 class="name jumbotron-heading"> 
+		   <?php the_field('introduction_heading'); ?> </h1>
+			 <?php the_field('introduction'); ?>     
     </div>
 </section>
-<section class="submit">
 
+<section class="submit">
 <article class="first">
 <img src="<?php bloginfo('template_url'); ?>/images/contact-us.png">
 </article>
@@ -70,23 +69,19 @@ Enter the text
  <ul class="contact">
 	 <li> 
 		 <span class="layer"><i class="fas fa-map-marker-alt"></i></span>
-		 <p>Star Street, Park Avenue</p>
-      <p>253/ 254  Jupiter East , JP 6985 </p>
+		 <?php the_field('address'); ?>
 	 </li>
 	 <li> 
 		 <span class="layer"><i class="fas fa-phone"></i></span>
-		 <p>+321 456 789 010</p>
-     <p>+321 88956 23658 </p>
+		 <?php the_field('phones'); ?>
 	 </li>
 	 <li> 
 		 <span class="layer"><i class="far fa-envelope"></i></span>
-		 <p>ForCorporate@ForestThemes.com</p>		
-      <p>ForestThemes@yahoo.com </p>
+		 <?php the_field('emails'); ?>
 	 </li>
 	 <li> 
 		 <span class="layer"><i class="fas fa-pen"></i></span>
-		 <p>facebook.com/ForCorporate.ForestThemes</p>
-      <p>Twitter.com/ForCorporate.ForestThemes </p>
+		 <?php the_field('write'); ?>
 	 </li>
 </ul> 
 </section>
@@ -98,28 +93,23 @@ Enter the text
 	 <ul class="contact_us">
      <li>
 		 <i class="fas fa-map-marker-alt"></i>
-		 <h4><span> address: </span>
-		  326585 Salemba Raya, Jakata </h4>
+		 <?php the_field('write_us'); ?>
 			</li>
 			<li>
-		 <i class="fas fa-phone"></i>
-		 <h4><span> Phone:  </span>
-		  +880 111-111-111 </h4>
+			<i class="fas fa-phone"></i>
+			<?php the_field('call_us'); ?>
 		  </li>
-
 			<li>
-		 <i class="far fa-envelope"></i>
-		 <h4><span> Email: </span>
-		 ForCorporate@ForestThmes.com  </h4>
+			<i class="far fa-envelope"></i>
+			<?php the_field('email_us'); ?>
 		  </li>
 
 			<li>
 		 <i class="far fa-clock"></i>
-		 <h4><span>Monday - Friday :  </span>
-			10.00 am to 18.00 pm</h4></li>
-			<li>			
-		 <h4><span>Saturday - Sunday : </span>
-		  closed</h4>
+		 <?php the_field('our_schedule_bus'); ?>
+		 </li>
+			<li>
+			<?php the_field('our_schedule_weekend'); ?>			
 		  </li>
    </ul>
  </li>
@@ -130,19 +120,19 @@ Enter the text
 			<li>
 				<p>
 				   <i class="fab fa-twitter"></i>
-			Tweet It is a long established fact that
-		  a reader will be distracted by the 
-			readable content of a page when</p>
-			</li>			
+					 <?php the_field('first_tweet'); ?>
+				</p>
+			</li>
+			
 			<li>
 				<p> 
-				<i class="fab fa-twitter"></i>
-			Tweet It is a long established fact that
-		  a reader will be distracted by the 
-			readable content of a page when</p>
+				   <i class="fab fa-twitter"></i>
+				   <?php the_field('second_tweet'); ?>
+				</p>
       </li>
 			</ul>
  </li>
+
 
  <li class="write_us">
    <h3> Write Us </h3>
