@@ -179,9 +179,9 @@ section.testimonials {
 	ul {
 		transform: skewY(4deg);
 		list-style-type: none;
-		div.img {
-			height: 111px;
-			width: 111px;
+		img {
+			height: auto;
+			max-width: 111px;
 			border-radius: 50%;
 			margin-left: 9em;
 			background-color: color(second);
@@ -348,6 +348,9 @@ section.contact {
 				h3 {
 					font-size: 1em;
 					padding-bottom: 2em;
+				}
+				i {
+					padding-right: 0.5em;
 				}
 			}
 		}

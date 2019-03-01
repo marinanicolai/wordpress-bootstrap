@@ -92,9 +92,7 @@ get_header();
 	</ul>
 <?php endif; ?>
 			
-    </div>
-    
-    
+    </div>      
  </div>
 </div>
 </section>
@@ -106,33 +104,24 @@ get_header();
 					<?php the_field('testimonials'); ?>
 			 </p>
       </div>
-<ul>
-  <li class="left">
-	   <div class="img"></div>
-		 <h3 class="name">Jacob Lawrence</h3>
-		 <span class="job">Magic Studio </span>
-		 <p> It is a long established fact that
-		  a reader will be distracted by the 
-			readable content of a page when </p>
-	</li>
-	<li class="right">
-	   <div class="img"></div>
-		 <h3 class="name">Jacob Lawrence</h3>
-		 <span class="job">Magic Studio </span>
-		 <p> It is a long established fact that
-		  a reader will be distracted by the 
-			readable content of a page when </p>
-	</li>
-	<li class="right">
-	   <div class="img"></div>
-		 <h3 class="name">Jacob Lawrence</h3>
-		 <span class="job">Magic Studio </span>
-		 <p> It is a long established fact that
-		  a reader will be distracted by the 
-			readable content of a page when </p>
-	</li>
-</ul>
 
+<?php if(get_field('testimonial_members')): ?>
+<ul class="team testimonials">
+		<?php while(has_sub_field('testimonial_members')): ?>
+  <li class="left">
+	   
+		 <img src="<?php the_sub_field('testimonial_img'); ?>" />
+		 
+		 <h3 class="name"><?php  the_sub_field('testimonial_name'); ?> </h3>	 
+		 <span class="job"><?php  the_sub_field('testimonial_job'); ?></span> 
+		 <?php the_sub_field('testimonial'); ?>		
+	</li>
+	   <?php endwhile; ?>
+		</ul>
+		<?php endif; ?>	
+
+
+	
 </section>
 
 <section class="our_portofolio jumbotron text-center">
@@ -185,7 +174,7 @@ get_header();
 					</p>
 </div>
 
-/*this is the repeter for each member*/
+
 <?php if(get_field('team_members')): ?>
 <ul class="team">
 		<?php while(has_sub_field('team_members')): ?>
@@ -199,12 +188,12 @@ get_header();
 							<i class="fab fa-facebook"></i></a>
 					</li>
 					<li>
-							<a href="<?php the_sub_field('facebook_url'); ?>">
-							<i class="fab fa-facebook"></i></a>
+							<a href="<?php the_sub_field('twitter_url'); ?>">
+							<i class="fab fa-twitter-square"></i></a>
 					</li>	
 					<li>
-							<a href="<?php the_sub_field('facebook_url'); ?>">
-							<i class="fab fa-facebook"></i></a>
+							<a href="<?php the_sub_field('linkedin_url'); ?>">
+							<i class="fab fa-linkedin"></i></a>
 					</li>		
 				</ul>	
 
@@ -224,29 +213,24 @@ get_header();
 	 <ul class="contact_us">
      <li>
 		 <i class="fas fa-map-marker-alt"></i>
-		 <h4><span> address: </span>
-		  326585 Salemba Raya, Jakata </h4>
+		 <?php the_field('write_us'); ?>
 			</li>
 			<li>
-		 <i class="fas fa-phone"></i>
-		 <h4><span> Phone:  </span>
-		  +880 111-111-111 </h4>
+			<i class="fas fa-phone"></i>
+			<?php the_field('call_us'); ?>
 		  </li>
 			<li>
-		 <i class="far fa-envelope"></i>
-		 <h4><span> Email: </span>
-		 ForCorporate@ForestThmes.com  </h4>
-		  </li>
+			<i class="far fa-envelope"></i>
+			<?php the_field('email_us'); ?>
+			  </li>
 			<li>
 		 <i class="far fa-clock"></i>
-		 <h4><span>Monday - Friday :  </span>
-			10.00 am to 18.00 pm</h4></li>
-			<li>			
-		 <h4><span>Saturday - Sunday : </span>
-		  closed</h4>
+		 <?php the_field('our_schedule_bus'); ?>
+		 </li>
+			<li>
+			<?php the_field('our_schedule_weekend'); ?>			
 		  </li>
-   </ul>
- </li>
+</ul>
 
  <li class="tweets">
    <h3> Latest Tweets </h3>
@@ -254,21 +238,18 @@ get_header();
 			<li>
 				<p>
 				   <i class="fab fa-twitter"></i>
-			Tweet It is a long established fact that
-		  a reader will be distracted by the 
-			readable content of a page when</p>
+					 <?php the_field('first_tweet'); ?>
+				</p>
 			</li>
 			
 			<li>
 				<p> 
-				<i class="fab fa-twitter"></i>
-			Tweet It is a long established fact that
-		  a reader will be distracted by the 
-			readable content of a page when</p>
+				   <i class="fab fa-twitter"></i>
+				   <?php the_field('second_tweet'); ?>
+				</p>
       </li>
 			</ul>
  </li>
-
  <li class="write_us">
    <h3> Write Us </h3>
 	     <input type="name" id="profile" placeholder="Name">
@@ -278,10 +259,7 @@ get_header();
 						<a href="#" class="btn btn-primary my-2">Send us</a>
 		</p>
  </li>
-
-
 </ul>
-
 </section>
 
 <section class="footer-front">

@@ -2819,9 +2819,9 @@ section.testimonials ul {
   list-style-type: none;
 }
 
-section.testimonials ul div.img {
-  height: 111px;
-  width: 111px;
+section.testimonials ul img {
+  height: auto;
+  max-width: 111px;
   border-radius: 50%;
   margin-left: 9em;
   background-color: #484848;
@@ -3019,6 +3019,10 @@ section.contact ul.col ul.contact_us li {
 section.contact ul.col ul.contact_us li h3 {
   font-size: 1em;
   padding-bottom: 2em;
+}
+
+section.contact ul.col ul.contact_us li i {
+  padding-right: 0.5em;
 }
 
 section.contact ul.col ul.lates_twe {
