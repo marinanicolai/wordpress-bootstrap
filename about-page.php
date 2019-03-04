@@ -42,8 +42,8 @@ get_header();
 		</section>
 <section class="no-header">
   <div class="row">
-	 <div class="col-sm">
-     <img src="#">
+	 <div class="col-sm">col-sm-12
+		 <img src="<?php the_field('first_image'); ?>" />     
      <h4>Fully Responsive </h4>
      <p> Modi tempora incidunt ut labore et dolore magnam aliquam quaera.Modi 
          tempora incidunt ut labore et dolore magnam aliquam quaera.Modi tempora 
@@ -51,7 +51,7 @@ get_header();
 		 </p>
 	  </div>
 		<div class="col-sm">
-     <img src="#">
+		 <img src="<?php the_field('second_image'); ?>" />
      <h4>Clean and Clear Layout </h4>
      <p> Modi tempora incidunt ut labore et dolore magnam aliquam quaera.Modi 
          tempora incidunt ut labore et dolore magnam aliquam quaera.Modi tempora 
@@ -59,7 +59,7 @@ get_header();
 		 </p>
 	  </div>
 		<div class="col-sm">
-     <img src="#">
+		 <img src="<?php the_field('third_image'); ?>" />
      <h4>Retina Ready </h4>
      <p> Modi tempora incidunt ut labore et dolore magnam aliquam quaera.Modi 
          tempora incidunt ut labore et dolore magnam aliquam quaera.Modi tempora 

@@ -38,22 +38,22 @@ get_header();
 </div>
 <div class="portofolio">
 <ul>
-    <li class="big"> </li>
-    <li class="small"> </li>
-    <li class="big"> </li>
-    <li class="small"> </li>
+    <li class="big"><img class="big" src="<?php the_field('first_left'); ?>" /> </li>
+    <li class="small"><img class="small" src="<?php the_field('second_left'); ?>" /> </li>
+    <li class="big"><img class="big" src="<?php the_field('third_left'); ?>" /> </li>
+    <li class="small"><img class="small" src="<?php the_field('fourth_left'); ?>" /> </li>
 </ul>   
 <ul>
-    <li class="small"> </li>
-    <li class="big"> </li>
-    <li class="small"> </li>
-    <li class="big"> </li>
+    <li class="small"><img class="small" src="<?php the_field('first_center'); ?>" /> </li>
+    <li class="big"><img class="big" src="<?php the_field('second_center'); ?>" /> </li>
+    <li class="small"><img class="small" src="<?php the_field('third_center'); ?>" /> </li>
+    <li class="big"><img class="big" src="<?php the_field('fourth_center'); ?>" /> </li>
 </ul>   
 <ul>
-    <li class="big"> </li>
-    <li class="small"> </li>
-    <li class="big"> </li>
-    <li class="small"> </li>
+    <li class="big"><img class="big" src="<?php the_field('first_right'); ?>" /> </li>
+    <li class="small"><img class="small" src="<?php the_field('second_right'); ?>" /> </li>
+    <li class="big"><img class="big" src="<?php the_field('third_center'); ?>" /> </li>
+    <li class="small"> <img class="small" src="<?php the_field('fourth_right'); ?>" /></li>
 </ul>   
 </div>   
 </section>

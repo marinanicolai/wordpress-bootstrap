@@ -28,6 +28,13 @@ section.how_are_services {
 		}
 		div.row {
 			padding-top: 4em;
+			img {
+				padding-left: 8em;
+			}
+			h4 {
+				padding-top: 2em;
+				text-align: center;
+			}
 		}
 	}
 }
@@ -36,6 +43,7 @@ section.testimonials {
 	background-color: color(second-lighter);
 	transform: skewY(-4deg);
 	height: 35em;
+	margin-top: 9em;
 	.container {
 		transform: skewY(4deg);
 		h1.name {

@@ -134,23 +134,23 @@ get_header();
 <div class="row">
 	 <div class="column left">
 		 <ul>
-			 <li class="large"> </li>
-			 <li class="small"> </li>
-			 <li class="medium"> </li>
+			 <li class="large"><img class="large" src="<?php the_field('portofolio_top_left'); ?>" /> </li>
+			 <li class="small"> <img class="small" src="<?php the_field('portofolio_middle_left'); ?>" /> </li>
+			 <li class="medium"> <img class="medium" src="<?php the_field('portofolio_bottom_left'); ?>" /> </li>
 </ul>
 	 </div>
 	 <div class="column right">
 		 <ul>
-			 <li class="small"> </li>
-			 <li class="medium"> </li>
-			 <li class="large"> </li>
+			 <li class="small"> <img class="small" src="<?php the_field('portofolio_top_center'); ?>" /> </li>
+			 <li class="medium"> <img class="medium" src="<?php the_field('portofolio_middle_center'); ?>" /> </li>
+			 <li class="large"> <img class="large" src="<?php the_field('portofolio_bottom_center'); ?>" /> </li>
 </ul>
 	 </div>
 	 <div class="column right">
 		 <ul>
-			 <li class="small"> </li>
-			 <li class="large"> </li>
-			 <li class="medium"> </li>
+			 <li class="small"> <img class="small" src="<?php the_field('portofolio_top_right'); ?>" /> </li>
+			 <li class="large"> <img class="large" src="<?php the_field('portofolio_middle_right'); ?>" /> </li>
+			 <li class="medium"> <img class="medium" src="<?php the_field('portofolio_bottom_right'); ?>" /></li>
 </ul>
 	 </div>
 </div>	 
@@ -179,7 +179,7 @@ get_header();
 <ul class="team">
 		<?php while(has_sub_field('team_members')): ?>
 		<li>   
-      	<img class="profile" src="<?php the_field('team_member_image'); ?>" />
+      	<img class="profile" src="<?php the_sub_field('team_member_image'); ?>" />
 	      <h3><?php the_sub_field('name'); ?> </h3>
 				<h4><?php the_sub_field('position'); ?> </h4>
 				<ul class="social">

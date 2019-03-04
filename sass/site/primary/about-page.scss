@@ -41,12 +41,40 @@ section.no-header {
 	height: 22em;
 	div.row {
 		transform: skewY(4deg);
-		padding-top: 4em;
+		padding: 4em;
+		img {
+			padding-left: 9em;
+			padding-bottom: 2em;
+		}
+		h4 {
+			text-align: center;
+		}
+	}
+}
+
+@mixin breakpoint($breakpoint) {
+	@if $breakpoint == phone {
+		@media (max-width: 600px) {
+			@content;
+		}
+	}
+	@if $breakpoint == tablet-port {
+		@media (max-width: 600px) {
+			@content;
+		}
+	}
+	@if $breakpoint == tablet-land {
+		@media (max-width: 600px) {
+			@content;
+		}
 	}
 }
 
 section.team_sec {
 	background-color: color(main);
+	@include breakpoint(phone) {
+		background: red;
+	}
 	h1.name {
 		text-decoration: underline color(button);
 	}
@@ -64,6 +92,12 @@ section.team_sec {
 			padding-right: 2em;
 			li:last-child {
 				padding-right: 0;
+				@include breakpoint(tablet) {
+					content: "tablet";
+				}
+				@include breakpoint(phone) {
+					background: green;
+				}
 			}
 			img.profile {
 				width: 272px;

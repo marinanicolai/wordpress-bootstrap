@@ -30,58 +30,39 @@ get_header();
 	<div class="container">
 <h1 class="name jumbotron-heading">Our services</h1>
   <div class="row">
-	 <div class="col-sm">
-     <img src="#">
+	 <div class="col-sm">	   
+     <img src="<?php the_field('first_image'); ?>" />		 
      <h4>Fully Responsive </h4>
-     <p> Modi tempora incidunt ut labore et dolore magnam aliquam quaera.Modi 
-         tempora incidunt ut labore et dolore magnam aliquam quaera.Modi tempora 
-         incidunt ut labore et dolore magnam aliquam quaera.
-		 </p>
-	  </div>
+		 <?php the_field('fully_responsive'); ?>
+    </div>
 		<div class="col-sm">
-     <img src="#">
+     <img src="<?php the_field('second_image'); ?>" />
      <h4>Clean and Clear Layout </h4>
-     <p> Modi tempora incidunt ut labore et dolore magnam aliquam quaera.Modi 
-         tempora incidunt ut labore et dolore magnam aliquam quaera.Modi tempora 
-         incidunt ut labore et dolore magnam aliquam quaera.
-		 </p>
-	  </div>
+		 <?php the_field('clean_and_clear_layout'); ?>
+     </div>
 		<div class="col-sm">
-     <img src="#">
+     <img src="<?php the_field('third_image'); ?>" />
      <h4>Retina Ready </h4>
-     <p> Modi tempora incidunt ut labore et dolore magnam aliquam quaera.Modi 
-         tempora incidunt ut labore et dolore magnam aliquam quaera.Modi tempora 
-         incidunt ut labore et dolore magnam aliquam quaera.
-		 </p>
+     <?php the_field('retina_ready'); ?>
 	  </div>
      </div>
      <div class="row">
 	 <div class="col-sm">
-     <img src="#">
+		 <img src="<?php the_field('fourth_image'); ?>" />
      <h4>Fully Responsive </h4>
-     <p> Modi tempora incidunt ut labore et dolore magnam aliquam quaera.Modi 
-         tempora incidunt ut labore et dolore magnam aliquam quaera.Modi tempora 
-         incidunt ut labore et dolore magnam aliquam quaera.
-		 </p>
+     <?php the_field('fully_responsive'); ?>
 	  </div>
 		<div class="col-sm">
-     <img src="#">
-     <h4>Clean and Clear Layout </h4>
-     <p> Modi tempora incidunt ut labore et dolore magnam aliquam quaera.Modi 
-         tempora incidunt ut labore et dolore magnam aliquam quaera.Modi tempora 
-         incidunt ut labore et dolore magnam aliquam quaera.
-		 </p>
+		  <img src="<?php the_field('fifth_image'); ?>" />
+      <h4>Clean and Clear Layout </h4>
+     <?php the_field('clean_and_clear_layout'); ?>
 	  </div>
 		<div class="col-sm">
-     <img src="#">
+     <img src="<?php the_field('sixth_image'); ?>" />
      <h4>Retina Ready </h4>
-     <p> Modi tempora incidunt ut labore et dolore magnam aliquam quaera.Modi 
-         tempora incidunt ut labore et dolore magnam aliquam quaera.Modi tempora 
-         incidunt ut labore et dolore magnam aliquam quaera.
-		 </p>
+     <?php the_field('retina_ready'); ?>
 	  </div>
 		 </div>
-</div>
 </section>
      
      <section class="testimonials jumbotron text-center">
@@ -90,77 +71,43 @@ get_header();
 			</div>
 <ul>
   <li class="left">
-	   <div class="img"></div>
-		 <h3 class="name">Jacob Lawrence</h3>
-		 <span class="job">Magic Studio </span>
-		 <p> It is a long established fact that
-		  a reader will be distracted by the 
-			readable content of a page when </p>
+	   <div class="img">
+		 <img src="<?php the_field('first_t_img'); ?>" />
+		 </div>
+		 <?php the_field('first_testimonial'); ?>
 	</li>
 	<li class="right">
-	   <div class="img"></div>
-		 <h3 class="name">Jacob Lawrence</h3>
-		 <span class="job">Magic Studio </span>
-		 <p> It is a long established fact that
-		  a reader will be distracted by the 
-			readable content of a page when </p>
+	   <div class="img">
+		 <img src="<?php the_field('second_t_img'); ?>" />
+		 </div>
+		 <?php the_field('second_testimonial'); ?>
 	</li>
 	<li class="right">
-	   <div class="img"></div>
-		 <h3 class="name">Jacob Lawrence</h3>
-		 <span class="job">Magic Studio </span>
-		 <p> It is a long established fact that
-		  a reader will be distracted by the 
-			readable content of a page when </p>
+	   <div class="img">
+		 <img src="<?php the_field('third_t_img'); ?>" />
+		 </div>
+		 <?php the_field('third_testimonial'); ?>
 	</li>
 </ul>
-
 </section>
 
 <section class="process_of_working jumbotron text-center">
 			<div class="container">
 			  <?php the_field('working'); ?>
-			</div>
- <div class="timeline">
-      <div class="events">
-        <ul class="testimonials">
-  <li class="active">Designer at Google</li>
-  <li class="active">Freelance Developer</li>
-  <li>Microsoft ???</li>
-</ul>
-      </div>
-    </div>
-    <div> 
-
-    <div class="slider">
-			<h1> thi is the slider </h1>
-</div>
-			<div class=" container stories">
-
-<div class="row story">
- <div class="col-sm">
-            first It is a long established fact that a reader will be distracted by the 
-						readable content of a page when looking at its layout. The point of 
-						using Lorem Ipsum is that it has a more-or-less normal distribution 
-						of letters, as opposed to using 'Content here,
-</div>
+			</div> 
+<div class=" container stories">
+ <div class="row story">
+  <div class="col-sm">
+	<?php the_field('first'); ?>
+  </div>
 <div class="col-sm">
-second It is a long established fact that a reader will be distracted by the 
-						readable content of a page when looking at its layout. The point of 
-						using Lorem Ipsum is that it has a more-or-less normal distribution 
-						of letters, as opposed to using 'Content here,
-</div>
+<?php the_field('second'); ?>
+  </div>
 <div class="col-sm">
-third It is a long established fact that a reader will be distracted by the 
-						readable content of a page when looking at its layout. The point of 
-						using Lorem Ipsum is that it has a more-or-less normal distribution 
-						of letters, as opposed to using 'Content here,
+<?php the_field('third'); ?>
+  </div>
+ </div>
 </div>
-</div>
-
-
-</div>
-
 </section>
 
 <section class="buy jumbotron text-center">
