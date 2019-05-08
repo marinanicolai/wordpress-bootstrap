@@ -1,6 +1,6 @@
 <?php
 /**
- * The main template file
+ * Template Name: Homepage
  *
  * This is the most generic template file in a WordPress theme
  * and one of the two required files for a theme (the other being style.css).
@@ -19,9 +19,9 @@ get_header();
 
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main">
-		<section class="corp_design jumbotron text-center">
+		<section class="corp_design jumbotron text-center" style="background-image: url(<?php the_field('homepage_first_image'); ?>)">
 			<div class="container">
-			 <?php the_field('introduc'); ?>
+			 <?php the_field('introduction'); ?>
 					<a href="#" class="btn btn-primary my-2">Buy now</a>					
 				</p>
 			</div>
